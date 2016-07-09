@@ -1,0 +1,346 @@
+
+Starting Nmap 7.12 ( https://nmap.org ) at 2016-07-09 11:51 EDT
+Warning: 10.0.1.18 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.0.1.1
+Host is up (0.0025s latency).
+Not shown: 997 closed ports
+PORT      STATE SERVICE           VERSION
+53/tcp    open  domain?
+5009/tcp  open  airport-admin     Apple AirPort or Time Capsule admin
+10000/tcp open  snet-sensor-mgmt?
+
+Nmap scan report for 10.0.1.3
+Host is up (0.0038s latency).
+Not shown: 998 closed ports
+PORT      STATE SERVICE           VERSION
+5009/tcp  open  airport-admin     Apple AirPort or Time Capsule admin
+10000/tcp open  snet-sensor-mgmt?
+
+Nmap scan report for 10.0.1.4
+Host is up (0.012s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE      VERSION
+5222/tcp open  xmpp-client?
+| xmpp-info: 
+|   STARTTLS Failed
+|   info: 
+|     unknown: 
+| 
+|     errors: 
+|       resource-constraint
+|       
+|         text: MAX_CLIENTS=4
+|       stream:stream
+|       (timeout)
+|     xmpp: 
+|       server name: HarmonyOne_Pop@qa1.com
+|       version: 1.0
+|     compression_methods: 
+| 
+|     stream_id: connection-failure
+|     features: 
+| 
+|     capabilities: 
+| 
+|_    auth_mechanisms: 
+8088/tcp open  radan-http?
+8222/tcp open  unknown
+
+Nmap scan report for 10.0.1.5
+Host is up (0.0023s latency).
+Not shown: 997 closed ports
+PORT      STATE SERVICE           VERSION
+5000/tcp  open  rtsp              Apple AirTunes rtspd 105.1 (Apple TV)
+|_rtsp-methods: ANNOUNCE, SETUP, RECORD, PAUSE, FLUSH, TEARDOWN, OPTIONS, GET_PARAMETER, SET_PARAMETER, POST, GET
+5009/tcp  open  airport-admin     Apple AirPort or Time Capsule admin
+10000/tcp open  snet-sensor-mgmt?
+Service Info: OS: Mac OS X; Device: media device; CPE: cpe:/o:apple:mac_os_x
+
+Nmap scan report for 10.0.1.6
+Host is up (0.0025s latency).
+Not shown: 998 closed ports
+PORT      STATE SERVICE           VERSION
+5009/tcp  open  airport-admin     Apple AirPort or Time Capsule admin
+10000/tcp open  snet-sensor-mgmt?
+
+Nmap scan report for 10.0.1.10
+Host is up (0.00032s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 6.9 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 94:69:96:c6:a1:5b:f1:c2:29:b4:af:9a:96:e1:ca:95 (DSA)
+|   2048 3a:cc:1f:4d:65:a9:25:a0:e9:ae:9d:a7:ff:99:2d:5a (RSA)
+|_  256 32:46:ff:93:d4:7b:37:47:75:ec:7f:d7:f6:79:62:bf (ECDSA)
+3306/tcp open  mysql   MySQL (unauthorized)
+
+Nmap scan report for 10.0.1.18
+Host is up (0.0041s latency).
+Not shown: 931 closed ports, 64 filtered ports
+PORT      STATE SERVICE    VERSION
+3689/tcp  open  daap       Apple iTunes DAAP 11.1b37
+5000/tcp  open  rtsp       Apple AirTunes rtspd 200.54 (Apple TV)
+|_rtsp-methods: ANNOUNCE, SETUP, RECORD, PAUSE, FLUSH, TEARDOWN, OPTIONS, GET_PARAMETER, SET_PARAMETER, POST, GET
+7000/tcp  open  http       Apple AirPlay httpd
+| http-methods: 
+|_  Potentially risky methods: PUT
+|_http-title: Site doesn't have a title.
+7100/tcp  open  http       Apple AirPlay httpd
+|_http-title: Site doesn't have a title.
+62078/tcp open  tcpwrapped
+Service Info: OSs: OS X, Mac OS X; Device: media device; CPE: cpe:/o:apple:mac_os_x
+
+Nmap scan report for 10.0.1.22
+Host is up (0.022s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     (protocol 2.0)
+| ssh-hostkey: 
+|   1024 05:de:de:5b:66:e9:98:74:e8:61:1f:22:8a:b7:66:e0 (DSA)
+|   2048 2e:41:f6:26:28:36:8d:91:14:21:c8:8f:c8:fd:37:c4 (RSA)
+|_  256 5f:54:c3:70:ae:da:9c:54:10:92:b2:39:c2:35:e6:63 (ECDSA)
+80/tcp open  http    Apache httpd 2.4.10 ((Raspbian))
+|_http-server-header: Apache/2.4.10 (Raspbian)
+|_http-title: Sensornet
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port22-TCP:V=7.12%I=7%D=7/9%Time=57811DBB%P=x86_64-apple-darwin15.4.0%r
+SF:(NULL,29,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\+deb8u2\r\n");
+
+Nmap scan report for 10.0.1.24
+Host is up (0.0077s latency).
+Not shown: 995 filtered ports
+PORT      STATE SERVICE    VERSION
+80/tcp    open  http       TiVo To Go httpd 20.4.7.stream-01-6:A94
+|_http-server-header: tivo-httpd-1:20.4.7.stream-01-6:A94
+| http-title: Congratulations!
+|_Requested resource was /index.html
+443/tcp   open  ssl/http   TiVo To Go httpd 20.4.7.stream-01-6:A94
+| http-auth: 
+| HTTP/1.1 401 Authorization Required
+|_  Digest realm=TiVo DVR qop=auth nonce=3FD76E36E3F29C52
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=A94000190221699/organizationName=TiVo Inc./stateOrProvinceName=CA/countryName=US
+| Not valid before: 2014-12-11T03:12:43
+|_Not valid after:  2024-12-08T03:12:43
+|_ssl-date: 2016-07-09T15:55:21+00:00; +1s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|_  ciphers: none
+2190/tcp  open  tcpwrapped
+2191/tcp  open  tvbus?
+49152/tcp open  upnp       Portable SDK for UPnP devices 1.6.8 (Linux 2.6.33.3; UPnP 1.0)
+Service Info: OS: Linux; Device: media device; CPE: cpe:/o:linux:linux_kernel:2.6.33.3
+
+Nmap scan report for 10.0.1.30
+Host is up (0.0026s latency).
+Not shown: 995 filtered ports
+PORT     STATE  SERVICE    VERSION
+80/tcp   open   http       TiVo To Go httpd 20.6.1.RC14-01-2:748
+| http-title: Congratulations!
+|_Requested resource was /index.html
+443/tcp  open   ssl/http   TiVo To Go httpd 20.6.1.RC14-01-2:748
+| http-auth: 
+| HTTP/1.1 401 Authorization Required
+|_  Digest realm=TiVo DVR qop=auth nonce=D742BBD90CA29168
+| ssl-cert: Subject: commonName=7480001903213A5/organizationName=TiVo Inc./stateOrProvinceName=CA/countryName=US
+| Not valid before: 2014-03-14T13:12:00
+|_Not valid after:  2024-03-11T13:12:00
+2190/tcp open   tcpwrapped
+2191/tcp open   tvbus?
+9080/tcp closed glrpc
+Service Info: Device: media device
+
+Nmap scan report for 10.0.1.31
+Host is up (0.0090s latency).
+Not shown: 998 closed ports
+PORT      STATE    SERVICE      VERSION
+1145/tcp  filtered x9-icue
+62078/tcp open     iphone-sync?
+
+Nmap scan report for 10.0.1.32
+Host is up (0.0085s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http
+| http-auth: 
+| HTTP/1.1 401 Unauthorized
+|_  Server returned status 401 but no WWW-Authenticate header.
+|_http-title: Site doesn't have a title (text/html).
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.12%I=7%D=7/9%Time=57811DBA%P=x86_64-apple-darwin15.4.0%r
+SF:(GetRequest,111C,"HTTP/1\.1\x20401\x20Unauthorized\r\nConnection:\x20cl
+SF:ose\r\nContent-Type:\x20text/html\r\nCache-Control:no-cache\r\nPragma:n
+SF:o-cache\r\nExpires:wed,\x2010\x20Oct\x201997\x2008:21:57\x20GMT\r\n\r\n
+SF:<script>\nvar\x20logonInfo\x20=\x20new\x20Array\(\n5,\n0,0\);\nvar\x20g
+SF:_Lan\x20=\x20256;\nvar\x20g_year=2015;\n</script>\n<html>\x20<head>\x20
+SF:<meta\x20http-equiv=pragma\x20content=no-cache>\x20<meta\x20http-equiv=
+SF:expires\x20content=\"wed,\x2026\x20Feb\x201997\x2008:21:57\x20GMT\">\x2
+SF:0<script>function\x20goUrl\(e\){window\.open\(e,\"\",\"\"\)}function\x2
+SF:0resize\(e\){if\(document\.all\){var\x20t=document\.body\.offsetWidth,o
+SF:=document\.body\.offsetHeight;document\.getElementById\(e\)\.style\.lef
+SF:t=\.5\*\(t-400\),document\.getElementById\(e\)\.style\.top=\.3\*\(o-300
+SF:\)}else{var\x20t=window\.innerWidth,o=window\.innerHeight;document\.get
+SF:ElementById\(e\)\.style\.left=\.5\*\(t-400\),document\.getElementById\(
+SF:e\)\.style\.top=\.3\*\(o-300\)}}function\x20doClear\(\){document\.getEl
+SF:ementById\(\"username\"\)\.value=\"\",document\.getElementById\(\"passw
+SF:ord\"\)\.value=\"\",window\.focus&&self\.focus\(\),document\.ge")%r(Fou
+SF:rOhFourRequest,111C,"HTTP/1\.1\x20401\x20Unauthorized\r\nConnection:\x2
+SF:0close\r\nContent-Type:\x20text/html\r\nCache-Control:no-cache\r\nPragm
+SF:a:no-cache\r\nExpires:wed,\x2010\x20Oct\x201997\x2008:21:57\x20GMT\r\n\
+SF:r\n<script>\nvar\x20logonInfo\x20=\x20new\x20Array\(\n5,\n0,0\);\nvar\x
+SF:20g_Lan\x20=\x20442;\nvar\x20g_year=2015;\n</script>\n<html>\x20<head>\
+SF:x20<meta\x20http-equiv=pragma\x20content=no-cache>\x20<meta\x20http-equ
+SF:iv=expires\x20content=\"wed,\x2026\x20Feb\x201997\x2008:21:57\x20GMT\">
+SF:\x20<script>function\x20goUrl\(e\){window\.open\(e,\"\",\"\"\)}function
+SF:\x20resize\(e\){if\(document\.all\){var\x20t=document\.body\.offsetWidt
+SF:h,o=document\.body\.offsetHeight;document\.getElementById\(e\)\.style\.
+SF:left=\.5\*\(t-400\),document\.getElementById\(e\)\.style\.top=\.3\*\(o-
+SF:300\)}else{var\x20t=window\.innerWidth,o=window\.innerHeight;document\.
+SF:getElementById\(e\)\.style\.left=\.5\*\(t-400\),document\.getElementByI
+SF:d\(e\)\.style\.top=\.3\*\(o-300\)}}function\x20doClear\(\){document\.ge
+SF:tElementById\(\"username\"\)\.value=\"\",document\.getElementById\(\"pa
+SF:ssword\"\)\.value=\"\",window\.focus&&self\.focus\(\),document\.ge");
+
+Nmap scan report for 10.0.1.33
+Host is up (0.0031s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.0p1 Debian 4+deb7u4 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 59:18:1b:c6:5c:71:9d:78:87:de:70:47:e3:ff:c2:86 (DSA)
+|   2048 ff:ed:a5:7a:19:6f:fe:77:52:7a:d6:13:6a:84:5a:52 (RSA)
+|_  256 15:3e:2a:9c:ea:81:37:2b:31:d8:93:ea:26:45:ad:42 (ECDSA)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.0.1.60
+Host is up (0.0024s latency).
+Not shown: 988 closed ports
+PORT      STATE SERVICE       VERSION
+22/tcp    open  ssh           OpenSSH 5.6 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 d3:3e:b9:fc:e3:6b:8e:01:dd:fd:7b:de:95:66:42:d5 (DSA)
+|_  2048 85:6b:76:08:f8:b4:b2:f0:93:e5:fc:c4:8c:46:fe:32 (RSA)
+111/tcp   open  rpcbind       2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|   100000  2,3,4        111/udp  rpcbind
+|   100003  2,3         2049/tcp  nfs
+|   100003  2,3         2049/udp  nfs
+|   100005  1,3          804/udp  mountd
+|   100005  1,3         1023/tcp  mountd
+|   100011  1,2          670/udp  rquotad
+|   100011  1,2         1001/tcp  rquotad
+|   100021  0,1,3,4      725/udp  nlockmgr
+|   100021  0,1,3,4     1017/tcp  nlockmgr
+|   100024  1            931/udp  status
+|_  100024  1           1021/tcp  status
+445/tcp   open  microsoft-ds?
+548/tcp   open  afp           Apple AFP (name: talia; protocol 3.4; Mac OS X 10.6 - 10.8; MacPro1,1)
+| afp-serverinfo: 
+|   Server Flags: 
+|     Flags hex: 0x9ffb
+|     Super Client: true
+|     UUIDs: true
+|     UTF8 Server Name: true
+|     Open Directory: true
+|     Reconnect: true
+|     Server Notifications: true
+|     TCP/IP: true
+|     Server Signature: true
+|     Server Messages: true
+|     Password Saving Prohibited: false
+|     Password Changing: true
+|     Copy File: true
+|   Server Name: talia
+|   Machine Type: MacPro1,1
+|   AFP Versions: AFP3.4, AFP3.3, AFP3.2, AFP3.1, AFPX03
+|   UAMs: DHCAST128, DHX2, Recon1, Client Krb v2, GSS, No User Authent
+|   Server Signature: 000000000000100080000017f204d7e6
+|   Network Addresses: 
+|     10.0.1.60:548
+|     169.254.94.121:548
+|     [fe80:0000:0000:0000:0217:f2ff:fe04:d7e6]:548
+|     [fe80:0000:0000:0000:0217:f2ff:fe04:d7e7]:548
+|     10.0.1.60
+|   Directory Names: 
+|     afpserver/LKDC:SHA1.E5F357EDF534B3CBB2E79CF72D0EE19A48C21711@LKDC:SHA1.E5F357EDF534B3CBB2E79CF72D0EE19A48C21711
+|_  UTF8 Server Name: talia
+1001/tcp  open  rquotad       1-2 (RPC #100011)
+1021/tcp  open  status        1 (RPC #100024)
+1023/tcp  open  mountd        1-3 (RPC #100005)
+2002/tcp  open  ssl/globe?
+| ssl-cert: Subject: commonName=talia.local
+| Not valid before: 2014-04-18T01:38:03
+|_Not valid after:  2019-04-17T01:38:03
+|_ssl-date: TLS randomness does not represent time
+2049/tcp  open  nfs           2-3 (RPC #100003)
+5900/tcp  open  vnc           Apple remote desktop vnc
+| vnc-info: 
+|   Protocol version: 3.889
+|   Security types: 
+|     Mac OS X security type (30)
+|     VNC Authentication (2)
+|_    Mac OS X security type (35)
+49154/tcp open  unknown
+49176/tcp open  unknown
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1001-TCP:V=7.12%I=7%D=7/9%Time=57811DD9%P=x86_64-apple-darwin15.4.0
+SF:%r(RPCCheck,1C,"\x80\0\0\x18r\xfe\x1d\x13\0\0\0\x01\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\x03");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1021-TCP:V=7.12%I=7%D=7/9%Time=57811DD9%P=x86_64-apple-darwin15.4.0
+SF:%r(RPCCheck,1C,"\x80\0\0\x18r\xfe\x1d\x13\0\0\0\x01\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\x03");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1023-TCP:V=7.12%I=7%D=7/9%Time=57811DD9%P=x86_64-apple-darwin15.4.0
+SF:%r(RPCCheck,1C,"\x80\0\0\x18r\xfe\x1d\x13\0\0\0\x01\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\x03");
+Service Info: OS: Mac OS X; CPE: cpe:/o:apple:mac_os_x:10.8, cpe:/o:apple:mac_os_x
+
+Host script results:
+|_nbstat: NetBIOS name: TALIA, NetBIOS user: <unknown>, NetBIOS MAC: 00:17:f2:04:d7:e6 (Apple)
+
+Nmap scan report for 10.0.1.98
+Host is up (0.0045s latency).
+Not shown: 990 closed ports
+PORT      STATE SERVICE    VERSION
+21/tcp    open  ftp        HP JetDirect ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_d-w--w--w-   2 JetDirect  public         512 Feb 14  1999 PORT1 [NSE: writeable]
+23/tcp    open  telnet     HP JetDirect printer telnetd (No password)
+80/tcp    open  http       HP-ChaiSOE 1.0 (HP LaserJet http config)
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: HP-ChaiSOE/1.0
+| http-title: HP Color LaserJet 3800 Printers
+|_Requested resource was /hp/device/this.LCDispatcher
+280/tcp   open  http       HP-ChaiSOE 1.0 (HP LaserJet http config)
+| http-robots.txt: 1 disallowed entry 
+|_/
+| http-title: HP Color LaserJet 3800 Printers
+|_Requested resource was /hp/device/this.LCDispatcher
+443/tcp   open  ssl/http   HP-ChaiSOE 1.0 (HP LaserJet http config)
+| http-robots.txt: 1 disallowed entry 
+|_/
+| http-title: HP Color LaserJet 3800 Printers
+|_Requested resource was /hp/device/this.LCDispatcher
+| ssl-cert: Subject: commonName=HP Jetdirect 38DF000E/organizationName=Hewlett-Packard Co.
+| Not valid before: 2006-07-01T00:00:00
+|_Not valid after:  2011-07-01T00:00:00
+515/tcp   open  printer
+631/tcp   open  http       HP-ChaiSOE 1.0 (HP LaserJet http config)
+| http-robots.txt: 1 disallowed entry 
+|_/
+| http-title: HP Color LaserJet 3800 Printers
+|_Requested resource was /hp/device/this.LCDispatcher
+7627/tcp  open  http       HP-ChaiSOE 1.0 (HP LaserJet http config)
+| http-title: HP Color LaserJet 3800 Printers
+|_Requested resource was /hp/device/this.LCDispatcher
+9100/tcp  open  jetdirect?
+14000/tcp open  tcpwrapped
+Service Info: Devices: print server, printer
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (15 hosts up) scanned in 246.39 seconds
