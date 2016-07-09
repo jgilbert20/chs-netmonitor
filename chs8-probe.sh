@@ -1,6 +1,10 @@
 #!/bin/sh
 
+# PUSH
 # scp chs8-probe.sh root@192.168.1.8:
+
+# PULL
+# scp root@192.168.1.8:last-chs8-assoc .
 
 while true
 do

@@ -7,6 +7,58 @@ my $t = time();
 # scp -P 27182 root@192.168.1.2:arplog.txt .
 # scp root@192.168.1.8:arplogi.8.txt .
 
+# Station 28:cf:da:1a:2f:de (on wlan1)
+# 	inactive time:	2080 ms
+# 	rx bytes:	268392570
+# 	rx packets:	2272935
+# 	tx bytes:	558160048
+# 	tx packets:	6262974
+# 	tx retries:	302031
+# 	tx failed:	34
+# 	signal:  	-62 [-67, -67, -67] dBm
+# 	signal avg:	-62 [-68, -66, -67] dBm
+# 	tx bitrate:	58.5 MBit/s MCS 6
+# 	rx bitrate:	65.0 MBit/s MCS 7
+
+
+# TYPE, TIMESTAMP, OBSERVER, IP, ETHER, 
+
+
+open TOOL, "<last-chs2-assoc" or die "$!";
+
+while( <TOOL> )
+{
+	if( /Station\s+([^\s]+)\s+\(on\s+(\w+)\)/ )
+	{
+		$etherBase = $1;
+		my $iface = $2;
+		print join "\t", ( 'CHS2', $t, 'chs2', undef, $etherBase, undef, $iface ) ;
+		print "\n";
+	}
+}
+
+close TOOL;
+
+
+
+open TOOL, "<last-chs8-assoc" or die "$!";
+
+while( <TOOL> )
+{
+	if( /Station\s+([^\s]+)\s+\(on\s+(\w+)\)/ )
+	{
+		$etherBase = $1;
+		my $iface = $2;
+		print join "\t", ( 'CHS2', $t, 'netmon', undef, $1, $name ) ;
+		print "\n";
+	}
+}
+
+close TOOL;
+
+
+
+
 open TOOL, "<last-arp" or die "$!";
 
 while( <TOOL> )
@@ -23,7 +75,7 @@ while( <TOOL> )
 	$etherForIP{$ip} = $ether;
 	$ipForEther{$ether} = $ip;
 
-	print join "\t", ( 'ARP', $t, $ip, $ether, $name ) ;
+	print join "\t", ( 'ARP', $t, 'netmon', $ip, $ether, $name ) ;
 	print "\n";
 }
 
@@ -40,7 +92,7 @@ while( <TOOL> )
 	if( $a[0] eq '=' )
 	{
 		my( $ltype, $iface, $stack, $usersname, $sname, $domain, $fq, $ip, $port, $extra ) = @a;
-		print join "\t", ( 'AVAHI', $t, $ip, $fq, $iface, $stack, $sname, $domain ) ;
+		print join "\t", ( 'AVAHI', $t, 'netmon', $ip, $fq, $iface, $stack, $sname, $domain ) ;
 		print "\n";
 		$avahiNamesForIP{$ip} = $fq;
 	}
@@ -77,7 +129,7 @@ while( <TOOL> )
 	if( $raw =~ /^(\d+)\/(\w+)\s+(\w+)\s+(.+)/ )
 	{
 		@curService = ($1,$2,$3,$4 );
-		my @a = ('NMAP', $t, $currentIP, $mac, 'SERVICE', $1,$2,$3,$4 );
+		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, 'SERVICE', $1,$2,$3,$4 );
 		my $port = $1;
 		$serviceForIP{$currentIP}->{$port} = 1;
 		print join "\t", @a;
@@ -86,14 +138,14 @@ while( <TOOL> )
 
 	if( $raw =~ /^Service Info:\s+(.*)$/ )
 	{
-		my @a = ('NMAP', $t, $currentIP, $mac, 'OS', $1);
+		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, 'OS', $1);
 		print join "\t", @a;
 		print "\n";
 	}
 
 	if( $raw =~ /^\|\_([^\:]+):(.+)/ )
 	{	
-		my @a = ('NMAP', $t, $currentIP, $mac, 'SERVICEINFO', $1, $2);
+		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, 'SERVICEINFO', $1, $2);
 		print join "\t", @a;
 		print "\n";
 	}	
@@ -109,7 +161,7 @@ foreach $ether (sort keys %etherSeen)
 	my $avaname = $avahiNamesForIP{$ip} || "<noavahi>";
 	my $ports = join ",", (keys %{$serviceForIP{$ip}});
 
-	my @a = ('SUMMARY', $t, $ip, $ether, $avaname, $ports );
+	my @a = ('SUMMARY', $t, 'netmon', $ip, $ether, $avaname, $ports );
 		print join "\t", @a;
 		print "\n";
 
