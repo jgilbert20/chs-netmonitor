@@ -1,14 +1,14 @@
-***Started: Sat Jul  9 14:13:05 EDT 2016
+***Started: Sat Jul  9 14:47:06 EDT 2016
 Station 28:cf:da:1a:2f:de (on wlan1)
-	inactive time:	2080 ms
-	rx bytes:	268392570
-	rx packets:	2272935
-	tx bytes:	558160048
-	tx packets:	6262974
-	tx retries:	302031
+	inactive time:	3650 ms
+	rx bytes:	268440725
+	rx packets:	2273278
+	tx bytes:	558181112
+	tx packets:	6263150
+	tx retries:	302032
 	tx failed:	34
-	signal:  	-62 [-67, -67, -67] dBm
-	signal avg:	-62 [-68, -66, -67] dBm
+	signal:  	-64 [-68, -68, -69] dBm
+	signal avg:	-63 [-68, -66, -68] dBm
 	tx bitrate:	58.5 MBit/s MCS 6
 	rx bitrate:	65.0 MBit/s MCS 7
 	expected throughput:	30.166Mbps
@@ -19,37 +19,18 @@ Station 28:cf:da:1a:2f:de (on wlan1)
 	MFP:		no
 	TDLS peer:	no
 Station 94:10:3e:79:63:a8 (on wlan0)
-	inactive time:	2040 ms
-	rx bytes:	2538053
-	rx packets:	37613
-	tx bytes:	10503098
-	tx packets:	19230
-	tx retries:	6227
-	tx failed:	8
-	signal:  	-59 [-69, -59] dBm
-	signal avg:	-60 [-66, -62] dBm
-	tx bitrate:	86.7 MBit/s MCS 12 short GI
-	rx bitrate:	39.0 MBit/s MCS 4
-	expected throughput:	35.897Mbps
-	authorized:	yes
-	authenticated:	yes
-	preamble:	short
-	WMM/WME:	yes
-	MFP:		no
-	TDLS peer:	no
-Station e0:ac:cb:88:e2:04 (on wlan0)
-	inactive time:	10810 ms
-	rx bytes:	32987172
-	rx packets:	168059
-	tx bytes:	221537807
-	tx packets:	203912
-	tx retries:	38632
-	tx failed:	2
-	signal:  	-53 [-56, -57] dBm
-	signal avg:	-53 [-57, -56] dBm
-	tx bitrate:	144.4 MBit/s MCS 15 short GI
-	rx bitrate:	24.0 MBit/s
-	expected throughput:	47.76Mbps
+	inactive time:	2160 ms
+	rx bytes:	28851520
+	rx packets:	296540
+	tx bytes:	508946068
+	tx packets:	354302
+	tx retries:	112582
+	tx failed:	10
+	signal:  	-60 [-69, -61] dBm
+	signal avg:	-60 [-67, -61] dBm
+	tx bitrate:	117.0 MBit/s MCS 14
+	rx bitrate:	52.0 MBit/s MCS 11
+	expected throughput:	27.657Mbps
 	authorized:	yes
 	authenticated:	yes
 	preamble:	short
@@ -57,18 +38,18 @@ Station e0:ac:cb:88:e2:04 (on wlan0)
 	MFP:		no
 	TDLS peer:	no
 Station 7c:d1:c3:76:71:d6 (on wlan0)
-	inactive time:	180 ms
-	rx bytes:	28243715
-	rx packets:	99570
-	tx bytes:	97786804
-	tx packets:	116141
-	tx retries:	40496
-	tx failed:	24
-	signal:  	-54 [-55, -60] dBm
-	signal avg:	-55 [-56, -59] dBm
-	tx bitrate:	117.0 MBit/s MCS 14
+	inactive time:	200 ms
+	rx bytes:	32847172
+	rx packets:	124393
+	tx bytes:	136594146
+	tx packets:	151632
+	tx retries:	54780
+	tx failed:	37
+	signal:  	-50 [-56, -51] dBm
+	signal avg:	-51 [-56, -54] dBm
+	tx bitrate:	130.0 MBit/s MCS 15
 	rx bitrate:	1.0 MBit/s
-	expected throughput:	43.303Mbps
+	expected throughput:	35.338Mbps
 	authorized:	yes
 	authenticated:	yes
 	preamble:	short
@@ -76,18 +57,18 @@ Station 7c:d1:c3:76:71:d6 (on wlan0)
 	MFP:		no
 	TDLS peer:	no
 Station 00:56:cd:3f:dc:23 (on wlan0)
-	inactive time:	30050 ms
-	rx bytes:	18887
-	rx packets:	384
-	tx bytes:	16778
-	tx packets:	132
-	tx retries:	36
-	tx failed:	1
-	signal:  	-61 [-63, -65] dBm
-	signal avg:	-58 [-60, -63] dBm
-	tx bitrate:	57.8 MBit/s MCS 5 short GI
-	rx bitrate:	24.0 MBit/s
-	expected throughput:	30.29Mbps
+	inactive time:	10580 ms
+	rx bytes:	870492
+	rx packets:	8092
+	tx bytes:	11273641
+	tx packets:	8516
+	tx retries:	3333
+	tx failed:	4
+	signal:  	-61 [-61, -71] dBm
+	signal avg:	-64 [-66, -71] dBm
+	tx bitrate:	39.0 MBit/s MCS 4
+	rx bitrate:	1.0 MBit/s
+	expected throughput:	20.250Mbps
 	authorized:	yes
 	authenticated:	yes
 	preamble:	short
@@ -95,18 +76,18 @@ Station 00:56:cd:3f:dc:23 (on wlan0)
 	MFP:		no
 	TDLS peer:	no
 Station 58:94:6b:b0:a5:a0 (on wlan0)
-	inactive time:	30 ms
-	rx bytes:	14957121
-	rx packets:	51952
-	tx bytes:	42653159
-	tx packets:	56886
-	tx retries:	37326
-	tx failed:	149
-	signal:  	-75 [-79, -77] dBm
-	signal avg:	-76 [-79, -78] dBm
-	tx bitrate:	28.9 MBit/s MCS 3 short GI
-	rx bitrate:	24.0 MBit/s
-	expected throughput:	13.960Mbps
+	inactive time:	310 ms
+	rx bytes:	27104590
+	rx packets:	95050
+	tx bytes:	92630452
+	tx packets:	110469
+	tx retries:	81973
+	tx failed:	419
+	signal:  	-75 [-78, -77] dBm
+	signal avg:	-75 [-78, -78] dBm
+	tx bitrate:	43.3 MBit/s MCS 4 short GI
+	rx bitrate:	5.5 MBit/s
+	expected throughput:	12.991Mbps
 	authorized:	yes
 	authenticated:	yes
 	preamble:	short
