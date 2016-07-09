@@ -21,7 +21,7 @@ my $t = time();
 # 	rx bitrate:	65.0 MBit/s MCS 7
 
 
-# TYPE, TIMESTAMP, OBSERVER, IP, ETHER, 
+# TYPE, TIMESTAMP, OBSERVER, IP, ETHER, NAME, IFACE, SSID
 
 
 open TOOL, "<last-chs2-assoc" or die "$!";
@@ -30,26 +30,38 @@ while( <TOOL> )
 {
 	if( /Station\s+([^\s]+)\s+\(on\s+(\w+)\)/ )
 	{
-		$etherBase = $1;
+		$etherBase = uc $1;
 		my $iface = $2;
-		print join "\t", ( 'CHS2', $t, 'chs2', undef, $etherBase, undef, $iface ) ;
+		my $ssid = '438';
+		print join "\t", ( 'CHS2', $t, 'chs2', undef, $etherBase, undef, $iface, $ssid ) ;
+		$etherSeen{uc $etherBase} = 1;
+		$etherToAssoc{uc $etherBase} = $ssid; 
 		print "\n";
 	}
 }
 
 close TOOL;
 
+ # # INTERFACE           RADIO-NAME       MAC-ADDRESS       AP  SIGNAL... TX-RATE
+ # 0 CambridgeHackspace                   0C:2A:69:00:04:4F no  -67dBm... 36.0...
+ # 1 CambridgeHackspace                   10:4A:7D:86:2B:4E no  -61dBm... 240....
+ # 2 CambridgeHackspace                   10:9A:DD:AC:7B:CA no  -53dBm... 115....
+ # 3 CambridgeHackspace                   AC:5F:3E:E2:EA:D1 no  -61dBm... 39.0...
+ # 4 CambridgeHackspace                   78:9F:70:BA:D7:44 no  -66dBm... 57.7...
 
 
-open TOOL, "<last-chs8-assoc" or die "$!";
+
+open TOOL, "<last-chs4-assoc" or die "$!";
 
 while( <TOOL> )
 {
-	if( /Station\s+([^\s]+)\s+\(on\s+(\w+)\)/ )
+	if( /\d+\s+(\w+)\s+([^\s]+)/ )
 	{
-		$etherBase = $1;
-		my $iface = $2;
-		print join "\t", ( 'CHS2', $t, 'netmon', undef, $1, $name ) ;
+		$etherBase = $2;
+		my $ssid = $1;
+			$etherSeen{uc $etherBase} = 1;
+		$etherToAssoc{uc $etherBase} = $ssid; 
+		print join "\t", ( 'CHS4', $t, 'chs4', undef,  $etherBase, undef, undef, $ssid ) ;
 		print "\n";
 	}
 }
@@ -67,15 +79,17 @@ while( <TOOL> )
 	my @a = /^([^\s]+)\s+\(([\d\.]+)\)\s+at\s+([^\s]+)/; # .*+on\s+([^\s]+)/;
 	my $sname = $1;
 	my $ip = $2;
-	my $ether = $3;
+	my $ether = uc $3;
 
-	$etherSeen{$ether} = 1;
-	$ipSeen{$ether} = 1;
+	$etherSeen{uc $ether} = 1;
+	$ipSeen{$ip} = 1;
 
 	$etherForIP{$ip} = $ether;
-	$ipForEther{$ether} = $ip;
+	$ipForEther{uc $ether} = $ip;
 
-	print join "\t", ( 'ARP', $t, 'netmon', $ip, $ether, $name ) ;
+	$ssid = $etherToAssoc{uc $ether};
+
+	print join "\t", ( 'ARP', $t, 'netmon', $ip, $ether, $name, $ssid) ;
 	print "\n";
 }
 
@@ -118,6 +132,7 @@ while( <TOOL> )
 	{
 		$currentIP = $1;
 		$mac = defined $etherForIP{$1} ?  $etherForIP{$1} : "<notfound>";
+		$ssid = $etherToAssoc{uc $mac};
 	}
 
 	next unless defined $currentIP;
@@ -129,7 +144,7 @@ while( <TOOL> )
 	if( $raw =~ /^(\d+)\/(\w+)\s+(\w+)\s+(.+)/ )
 	{
 		@curService = ($1,$2,$3,$4 );
-		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, 'SERVICE', $1,$2,$3,$4 );
+		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, undef, $ssid, 'SERVICE', $1,$2,$3,$4 );
 		my $port = $1;
 		$serviceForIP{$currentIP}->{$port} = 1;
 		print join "\t", @a;
@@ -138,14 +153,14 @@ while( <TOOL> )
 
 	if( $raw =~ /^Service Info:\s+(.*)$/ )
 	{
-		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, 'OS', $1);
+		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, undef, $ssid, 'OS', $1);
 		print join "\t", @a;
 		print "\n";
 	}
 
 	if( $raw =~ /^\|\_([^\:]+):(.+)/ )
 	{	
-		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, 'SERVICEINFO', $1, $2);
+		my @a = ('NMAP', $t, 'netmon', $currentIP, $mac, undef, $ssid, 'SERVICEINFO', $1, $2);
 		print join "\t", @a;
 		print "\n";
 	}	
@@ -160,8 +175,8 @@ foreach $ether (sort keys %etherSeen)
 	my $ip = $ipForEther{$ether};
 	my $avaname = $avahiNamesForIP{$ip} || "<noavahi>";
 	my $ports = join ",", (keys %{$serviceForIP{$ip}});
-
-	my @a = ('SUMMARY', $t, 'netmon', $ip, $ether, $avaname, $ports );
+	my $ssid = $etherToAssoc{$ether};
+	my @a = ('SUMMARY', $t, 'netmon', $ip, $ether, $ssid, $avaname, $ports );
 		print join "\t", @a;
 		print "\n";
 

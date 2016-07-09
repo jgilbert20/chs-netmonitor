@@ -1,0 +1,5 @@
+
+
+Tools needed
+sudo apt-get install sshpass avahi-utils
+
