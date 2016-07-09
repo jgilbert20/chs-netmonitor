@@ -25,7 +25,7 @@ wl -i wl1.1 assoc >> last-chs8-assoc
 wl -i wl1.2 assoc >> last-chs8-assoc
 wl -i wl1.3 assoc >> last-chs8-assoc
 
-cat last-chs2-assoc >> LOG-chs8-assoc
+cat last-chs8-assoc >> LOG-chs8-assoc
 
 sleep 120
 done
