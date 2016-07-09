@@ -4,7 +4,8 @@ my $t = time();
 
 # sudo apt-get install avahi-utils
 # avahi-browse -a --resolve -c -p > avahi-browse.example
-
+# scp -P 27182 root@192.168.1.2:arplog.txt .
+# scp root@192.168.1.8:arplogi.8.txt .
 
 open TOOL, "<last-arp" or die "$!";
 
@@ -108,7 +109,7 @@ foreach $ether (sort keys %etherSeen)
 	my $avaname = $avahiNamesForIP{$ip} || "<noavahi>";
 	my $ports = join ",", (keys %{$serviceForIP{$ip}});
 
-	my @a = ('SUMMARY', $t, $ip, $ether, $savaname, $ports );
+	my @a = ('SUMMARY', $t, $ip, $ether, $avaname, $ports );
 		print join "\t", @a;
 		print "\n";
 
