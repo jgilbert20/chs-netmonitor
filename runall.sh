@@ -5,5 +5,5 @@ sshpass -f ~/pass ssh admin@192.168.1.4 interface wireless registration-table pr
 arp -a > last-arp
 avahi-browse -a --resolve -c -p > last-avahi-browse
 # nmap -A -T4 192.168.1.0/24 > last-nmap
-perl run-nmap.pl >> strutured-log.tsv
+perl run-nmap.pl >> structured-log.tsv
 
