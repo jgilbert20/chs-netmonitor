@@ -1,42 +1,38 @@
-+;eth0;IPv6;Tara\226\128\153s\032MacBook\032Pro;PostgreSQL Server;local
-+;eth0;IPv4;Tara\226\128\153s\032MacBook\032Pro;PostgreSQL Server;local
-+;eth0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
-+;eth0;IPv6;netmon\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
-+;eth0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
-+;eth0;IPv4;netmon\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
++;wlan0;IPv6;netmon-3;Remote Disk Management;local
++;wlan0;IPv4;netmon-3;Remote Disk Management;local
++;eth0;IPv6;netmon-3;Remote Disk Management;local
++;eth0;IPv4;netmon-3;Remote Disk Management;local
++;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
++;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local
++;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local
++;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local
++;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
++;eth0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
+=;wlan0;IPv6;netmon-3;Remote Disk Management;local;netmon-3.local;fdad:5db4:e382::a1a;22;
+=;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;fdad:5db4:e382::a1a;9;
+=;eth0;IPv6;netmon-3;Remote Disk Management;local;netmon-3.local;fdad:5db4:e382::283;22;
+=;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;fdad:5db4:e382::283;9;
+=;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;fdad:5db4:e382::283;9;
+=;wlan0;IPv4;netmon-3;Remote Disk Management;local;netmon-3.local;192.168.1.12;22;
+=;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;192.168.1.12;9;
+=;eth0;IPv4;netmon-3;Remote Disk Management;local;netmon-3.local;192.168.1.11;22;
+=;eth0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;192.168.1.11;9;
 +;eth0;IPv6;netmon0;Remote Disk Management;local
-+;eth0;IPv6;netmon;Remote Disk Management;local
++;eth0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
 +;eth0;IPv4;netmon0;Remote Disk Management;local
-+;eth0;IPv4;netmon;Remote Disk Management;local
-+;eth0;IPv6;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local
-+;eth0;IPv4;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local
-+;eth0;IPv6;A9C90F6691B0B37E_1;iPod Touch Music Library;local
-+;eth0;IPv4;A9C90F6691B0B37E_1;iPod Touch Music Library;local
-+;eth0;IPv6;A9C90F6691B0B37E;_appletv-v2._tcp;local
-+;eth0;IPv4;A9C90F6691B0B37E;_appletv-v2._tcp;local
-+;eth0;IPv6;weanis\032\0402069\041;_airplay._tcp;local
-+;eth0;IPv4;weanis\032\0402069\041;_airplay._tcp;local
-+;eth0;IPv6;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local
-+;eth0;IPv4;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local
-+;eth0;IPv4;TYM;_nvstream._tcp;local
-=;eth0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;fdad:5db4:e382::9ea;9;
++;eth0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
++;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
++;wlan0;IPv6;netmon0;Remote Disk Management;local
++;wlan0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
++;wlan0;IPv4;netmon0;Remote Disk Management;local
++;wlan0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
+=;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;fdad:5db4:e382::a1a;9;
 =;eth0;IPv6;netmon0;Remote Disk Management;local;netmon0.local;fdad:5db4:e382::9ea;22;
-=;eth0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;192.168.1.132;9;
-=;eth0;IPv4;netmon0;Remote Disk Management;local;netmon0.local;192.168.1.132;22;
-=;eth0;IPv6;netmon\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon.local;fdad:5db4:e382::283;9;
-=;eth0;IPv6;netmon;Remote Disk Management;local;netmon.local;fdad:5db4:e382::283;22;
-=;eth0;IPv4;netmon\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon.local;192.168.1.11;9;
-=;eth0;IPv4;netmon;Remote Disk Management;local;netmon.local;192.168.1.11;22;
-=;eth0;IPv4;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local;weanis-674.local;192.168.1.171;5000;"vv=2" "vs=200.54" "vn=65537" "tp=UDP" "sf=0x44" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "am=AppleTV2,1" "md=0,1,2" "ft=0x4A7FFFF7,0xE" "et=0,3,5" "da=true" "cn=0,1,2,3"
-=;eth0;IPv4;weanis\032\0402069\041;_airplay._tcp;local;weanis-674.local;192.168.1.171;7000;"vv=2" "srcvers=200.54" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "model=AppleTV2,1" "flags=0x44" "features=0x4A7FFFF7,0xE" "deviceid=28:CF:DA:1A:2F:DF"
-=;eth0;IPv4;A9C90F6691B0B37E;_appletv-v2._tcp;local;weanis-674.local;192.168.1.171;3689;"MiTPV=196611" "EiTS=1" "DFID=2" "PrVs=65538" "Name=weanis" "fs=2" "MniT=167845888" "hG=00000000-00c5-5e51-4efd-95be8b654661" "atSV=65541" "txtvers=1"
-=;eth0;IPv4;A9C90F6691B0B37E_1;iPod Touch Music Library;local;weanis-674.local;192.168.1.171;3689;"Ver=131077" "atCV=65537" "DvSv=1552" "DvTy=AppleTV" "CtlN=weanis" "DbId=2678B86D5A2A30E2" "atSV=65541" "txtvers=1"
-=;eth0;IPv4;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local;weanis-674.local;192.168.1.171;60379;
-=;eth0;IPv6;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local;weanis-674.local;192.168.1.171;5000;"vv=2" "vs=200.54" "vn=65537" "tp=UDP" "sf=0x44" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "am=AppleTV2,1" "md=0,1,2" "ft=0x4A7FFFF7,0xE" "et=0,3,5" "da=true" "cn=0,1,2,3"
-=;eth0;IPv6;weanis\032\0402069\041;_airplay._tcp;local;weanis-674.local;192.168.1.171;7000;"vv=2" "srcvers=200.54" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "model=AppleTV2,1" "flags=0x44" "features=0x4A7FFFF7,0xE" "deviceid=28:CF:DA:1A:2F:DF"
-=;eth0;IPv6;A9C90F6691B0B37E;_appletv-v2._tcp;local;weanis-674.local;192.168.1.171;3689;"MiTPV=196611" "EiTS=1" "DFID=2" "PrVs=65538" "Name=weanis" "fs=2" "MniT=167845888" "hG=00000000-00c5-5e51-4efd-95be8b654661" "atSV=65541" "txtvers=1"
-=;eth0;IPv6;A9C90F6691B0B37E_1;iPod Touch Music Library;local;weanis-674.local;192.168.1.171;3689;"Ver=131077" "atCV=65537" "DvSv=1552" "DvTy=AppleTV" "CtlN=weanis" "DbId=2678B86D5A2A30E2" "atSV=65541" "txtvers=1"
-=;eth0;IPv6;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local;weanis-674.local;192.168.1.171;60379;
-=;eth0;IPv4;Tara\226\128\153s\032MacBook\032Pro;PostgreSQL Server;local;Taras-MacBook-Pro.local;192.168.1.164;5432;
-=;eth0;IPv6;Tara\226\128\153s\032MacBook\032Pro;PostgreSQL Server;local;Taras-MacBook-Pro.local;192.168.1.164;5432;
-=;eth0;IPv4;TYM;_nvstream._tcp;local;Tym.local;192.168.1.161;47989;
+=;eth0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;fdad:5db4:e382::9ea;9;
+=;eth0;IPv4;netmon0;Remote Disk Management;local;netmon0.local;192.168.1.179;22;
+=;eth0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;192.168.1.179;9;
+=;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;192.168.1.11;9;
+=;wlan0;IPv6;netmon0;Remote Disk Management;local;netmon0.local;fdad:5db4:e382::9ea;22;
+=;wlan0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;fdad:5db4:e382::9ea;9;
+=;wlan0;IPv4;netmon0;Remote Disk Management;local;netmon0.local;192.168.1.179;22;
+=;wlan0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;192.168.1.179;9;
