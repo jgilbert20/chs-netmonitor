@@ -1,6 +1,6 @@
-***Started: Tue Jan 27 08:56:17 EST 1970
+***Started: Tue Jan 27 09:26:18 EST 1970
 SSID: "Studio6"
-Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -85 dBm	Channel: 1
+Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -84 dBm	Channel: 1
 BSSID: 0A:60:6E:20:83:63	Capability: ESS ShortSlot RRM 
 Supported Rates: [ 1(b) 2(b) 5.5(b) 6 9 11(b) 12 18 24 36 48 54 ]
 HT Capable:
@@ -10,7 +10,7 @@ HT Capable:
 	Supported MCS : [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ]
 
 SSID: "Studio7"
-Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -85 dBm	Channel: 1
+Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -84 dBm	Channel: 1
 BSSID: 0A:60:6E:20:83:60	Capability: ESS ShortSlot RRM 
 Supported Rates: [ 1(b) 2(b) 5.5(b) 6 9 11(b) 12 18 24 36 48 54 ]
 HT Capable:
@@ -20,7 +20,7 @@ HT Capable:
 	Supported MCS : [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ]
 
 SSID: "Studio9"
-Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -85 dBm	Channel: 1
+Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -84 dBm	Channel: 1
 BSSID: 0A:60:6E:20:83:61	Capability: ESS ShortSlot RRM 
 Supported Rates: [ 1(b) 2(b) 5.5(b) 6 9 11(b) 12 18 24 36 48 54 ]
 HT Capable:
@@ -30,7 +30,7 @@ HT Capable:
 	Supported MCS : [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ]
 
 SSID: "Studio6"
-Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -86 dBm	Channel: 36
+Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -87 dBm	Channel: 36
 BSSID: 0A:60:6E:20:83:65	Capability: ESS ShortPre RRM 
 Supported Rates: [ 6(b) 9 12(b) 18 24(b) 36 48 54 ]
 HT Capable:
@@ -40,7 +40,7 @@ HT Capable:
 	Supported MCS : [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ]
 
 SSID: "Studio7"
-Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -86 dBm	Channel: 36
+Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -87 dBm	Channel: 36
 BSSID: 0A:60:6E:20:83:66	Capability: ESS ShortPre RRM 
 Supported Rates: [ 6(b) 9 12(b) 18 24(b) 36 48 54 ]
 HT Capable:
@@ -50,7 +50,7 @@ HT Capable:
 	Supported MCS : [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ]
 
 SSID: "Studio9"
-Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -86 dBm	Channel: 36
+Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -87 dBm	Channel: 36
 BSSID: 0A:60:6E:20:83:67	Capability: ESS ShortPre RRM 
 Supported Rates: [ 6(b) 9 12(b) 18 24(b) 36 48 54 ]
 HT Capable:

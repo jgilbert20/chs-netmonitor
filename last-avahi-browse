@@ -1,38 +1,152 @@
++;wlan0;IPv6;UA\032Mixer;_uamixer._tcp;local
++;wlan0;IPv4;UA\032Mixer;_uamixer._tcp;local
++;eth0;IPv6;UA\032Mixer;_uamixer._tcp;local
++;eth0;IPv4;UA\032Mixer;_uamixer._tcp;local
++;wlan0;IPv6;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local
++;wlan0;IPv4;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local
++;eth0;IPv6;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local
++;eth0;IPv4;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local
++;wlan0;IPv6;weanis\032\0402069\041;_airplay._tcp;local
++;wlan0;IPv4;weanis\032\0402069\041;_airplay._tcp;local
++;eth0;IPv6;weanis\032\0402069\041;_airplay._tcp;local
++;eth0;IPv4;weanis\032\0402069\041;_airplay._tcp;local
++;wlan0;IPv6;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local
++;wlan0;IPv4;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local
++;eth0;IPv6;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local
++;eth0;IPv4;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local
++;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_uscan._tcp;local
++;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_uscan._tcp;local
++;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_uscan._tcp;local
++;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_uscan._tcp;local
++;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_scanner._tcp;local
++;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_scanner._tcp;local
++;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_scanner._tcp;local
++;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_scanner._tcp;local
++;wlan0;IPv6;Rack\032Addik\032\064\032Kelly\226\128\153s\032MacBook\032Pro;Internet Printer;local
++;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;Internet Printer;local
++;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;Internet Printer;local
++;wlan0;IPv4;Rack\032Addik\032\064\032Kelly\226\128\153s\032MacBook\032Pro;Internet Printer;local
++;eth0;IPv6;Rack\032Addik\032\064\032Kelly\226\128\153s\032MacBook\032Pro;Internet Printer;local
++;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;Internet Printer;local
++;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;Internet Printer;local
++;eth0;IPv4;Rack\032Addik\032\064\032Kelly\226\128\153s\032MacBook\032Pro;Internet Printer;local
++;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;PDL Printer;local
++;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;PDL Printer;local
++;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;PDL Printer;local
++;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;PDL Printer;local
++;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;UNIX Printer;local
++;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;UNIX Printer;local
++;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;UNIX Printer;local
++;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;UNIX Printer;local
++;wlan0;IPv6;netmon0;Remote Disk Management;local
 +;wlan0;IPv6;netmon-3;Remote Disk Management;local
++;wlan0;IPv4;netmon0;Remote Disk Management;local
 +;wlan0;IPv4;netmon-3;Remote Disk Management;local
++;eth0;IPv6;netmon0;Remote Disk Management;local
 +;eth0;IPv6;netmon-3;Remote Disk Management;local
++;eth0;IPv4;netmon0;Remote Disk Management;local
 +;eth0;IPv4;netmon-3;Remote Disk Management;local
++;wlan0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
 +;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
 +;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local
++;wlan0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
++;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
 +;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local
++;eth0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
 +;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local
 +;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
++;eth0;IPv4;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local
++;eth0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
 +;eth0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
-=;wlan0;IPv6;netmon-3;Remote Disk Management;local;netmon-3.local;fdad:5db4:e382::a1a;22;
-=;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;fdad:5db4:e382::a1a;9;
 =;eth0;IPv6;netmon-3;Remote Disk Management;local;netmon-3.local;fdad:5db4:e382::283;22;
 =;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;fdad:5db4:e382::283;9;
-=;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;fdad:5db4:e382::283;9;
-=;wlan0;IPv4;netmon-3;Remote Disk Management;local;netmon-3.local;192.168.1.12;22;
-=;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;192.168.1.12;9;
-=;eth0;IPv4;netmon-3;Remote Disk Management;local;netmon-3.local;192.168.1.11;22;
-=;eth0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;192.168.1.11;9;
-+;eth0;IPv6;netmon0;Remote Disk Management;local
-+;eth0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
-+;eth0;IPv4;netmon0;Remote Disk Management;local
-+;eth0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
-+;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local
-+;wlan0;IPv6;netmon0;Remote Disk Management;local
-+;wlan0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
-+;wlan0;IPv4;netmon0;Remote Disk Management;local
-+;wlan0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local
-=;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;fdad:5db4:e382::a1a;9;
+=;wlan0;IPv6;netmon-3;Remote Disk Management;local;netmon-3.local;fdad:5db4:e382::a1a;22;
+=;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;fdad:5db4:e382::a1a;9;
 =;eth0;IPv6;netmon0;Remote Disk Management;local;netmon0.local;fdad:5db4:e382::9ea;22;
 =;eth0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;fdad:5db4:e382::9ea;9;
+=;eth0;IPv4;netmon-3;Remote Disk Management;local;netmon-3.local;192.168.1.11;22;
+=;eth0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;192.168.1.11;9;
 =;eth0;IPv4;netmon0;Remote Disk Management;local;netmon0.local;192.168.1.179;22;
 =;eth0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;192.168.1.179;9;
-=;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;192.168.1.11;9;
+=;wlan0;IPv4;netmon-3;Remote Disk Management;local;netmon-3.local;192.168.1.12;22;
+=;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;192.168.1.12;9;
+=;wlan0;IPv6;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;fdad:5db4:e382::283;9;
 =;wlan0;IPv6;netmon0;Remote Disk Management;local;netmon0.local;fdad:5db4:e382::9ea;22;
 =;wlan0;IPv6;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;fdad:5db4:e382::9ea;9;
+=;wlan0;IPv4;netmon-3\032\091b8\05827\058eb\05877\05851\05819\093;Workstation;local;netmon-3.local;192.168.1.11;9;
 =;wlan0;IPv4;netmon0;Remote Disk Management;local;netmon0.local;192.168.1.179;22;
 =;wlan0;IPv4;netmon0\032\091b8\05827\058eb\058d3\058b5\05844\093;Workstation;local;netmon0.local;192.168.1.179;9;
++;eth0;IPv4;A9C90F6691B0B37E;_appletv-v2._tcp;local
++;eth0;IPv4;A9C90F6691B0B37E_1;iPod Touch Music Library;local
+=;eth0;IPv4;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local;weanis-674.local;192.168.1.171;5000;"vv=2" "vs=200.54" "vn=65537" "tp=UDP" "sf=0x44" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "am=AppleTV2,1" "md=0,1,2" "ft=0x4A7FFFF7,0xE" "et=0,3,5" "da=true" "cn=0,1,2,3"
+=;eth0;IPv4;weanis\032\0402069\041;_airplay._tcp;local;weanis-674.local;192.168.1.171;7000;"vv=2" "srcvers=200.54" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "model=AppleTV2,1" "flags=0x44" "features=0x4A7FFFF7,0xE" "deviceid=28:CF:DA:1A:2F:DF"
+=;eth0;IPv4;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local;weanis-674.local;192.168.1.171;60379;
++;eth0;IPv6;A9C90F6691B0B37E;_appletv-v2._tcp;local
++;eth0;IPv6;A9C90F6691B0B37E_1;iPod Touch Music Library;local
+=;eth0;IPv6;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local;weanis-674.local;192.168.1.171;5000;"vv=2" "vs=200.54" "vn=65537" "tp=UDP" "sf=0x44" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "am=AppleTV2,1" "md=0,1,2" "ft=0x4A7FFFF7,0xE" "et=0,3,5" "da=true" "cn=0,1,2,3"
+=;eth0;IPv6;weanis\032\0402069\041;_airplay._tcp;local;weanis-674.local;192.168.1.171;7000;"vv=2" "srcvers=200.54" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "model=AppleTV2,1" "flags=0x44" "features=0x4A7FFFF7,0xE" "deviceid=28:CF:DA:1A:2F:DF"
+=;eth0;IPv6;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local;weanis-674.local;192.168.1.171;60379;
+=;eth0;IPv6;UA\032Mixer;_uamixer._tcp;local;Shauns-iMac.local;192.168.1.174;4710;
+=;eth0;IPv4;UA\032Mixer;_uamixer._tcp;local;Shauns-iMac.local;192.168.1.174;4710;
+=;eth0;IPv4;A9C90F6691B0B37E;_appletv-v2._tcp;local;weanis-674.local;192.168.1.171;3689;"MiTPV=196611" "EiTS=1" "DFID=2" "PrVs=65538" "Name=weanis" "fs=2" "MniT=167845888" "hG=00000000-00c5-5e51-4efd-95be8b654661" "atSV=65541" "txtvers=1"
+=;eth0;IPv4;A9C90F6691B0B37E_1;iPod Touch Music Library;local;weanis-674.local;192.168.1.171;3689;"Ver=131077" "atCV=65537" "DvSv=1552" "DvTy=AppleTV" "CtlN=weanis" "DbId=2678B86D5A2A30E2" "atSV=65541" "txtvers=1"
+=;eth0;IPv6;A9C90F6691B0B37E;_appletv-v2._tcp;local;weanis-674.local;192.168.1.171;3689;"MiTPV=196611" "EiTS=1" "DFID=2" "PrVs=65538" "Name=weanis" "fs=2" "MniT=167845888" "hG=00000000-00c5-5e51-4efd-95be8b654661" "atSV=65541" "txtvers=1"
+=;eth0;IPv6;A9C90F6691B0B37E_1;iPod Touch Music Library;local;weanis-674.local;192.168.1.171;3689;"Ver=131077" "atCV=65537" "DvSv=1552" "DvTy=AppleTV" "CtlN=weanis" "DbId=2678B86D5A2A30E2" "atSV=65541" "txtvers=1"
+=;eth0;IPv6;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;fdad:5db4:e382::a1a;9;
+=;eth0;IPv4;netmon-3\032\091b8\05827\058eb\05822\05804\0584c\093;Workstation;local;netmon-3.local;192.168.1.12;9;
++;wlan0;IPv4;A9C90F6691B0B37E;_appletv-v2._tcp;local
++;wlan0;IPv4;A9C90F6691B0B37E_1;iPod Touch Music Library;local
+=;wlan0;IPv4;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local;weanis-674.local;192.168.1.171;5000;"vv=2" "vs=200.54" "vn=65537" "tp=UDP" "sf=0x44" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "am=AppleTV2,1" "md=0,1,2" "ft=0x4A7FFFF7,0xE" "et=0,3,5" "da=true" "cn=0,1,2,3"
+=;wlan0;IPv4;weanis\032\0402069\041;_airplay._tcp;local;weanis-674.local;192.168.1.171;7000;"vv=2" "srcvers=200.54" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "model=AppleTV2,1" "flags=0x44" "features=0x4A7FFFF7,0xE" "deviceid=28:CF:DA:1A:2F:DF"
+=;wlan0;IPv4;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local;weanis-674.local;192.168.1.171;60379;
+=;wlan0;IPv4;A9C90F6691B0B37E;_appletv-v2._tcp;local;weanis-674.local;192.168.1.171;3689;"MiTPV=196611" "EiTS=1" "DFID=2" "PrVs=65538" "Name=weanis" "fs=2" "MniT=167845888" "hG=00000000-00c5-5e51-4efd-95be8b654661" "atSV=65541" "txtvers=1"
+=;wlan0;IPv4;A9C90F6691B0B37E_1;iPod Touch Music Library;local;weanis-674.local;192.168.1.171;3689;"Ver=131077" "atCV=65537" "DvSv=1552" "DvTy=AppleTV" "CtlN=weanis" "DbId=2678B86D5A2A30E2" "atSV=65541" "txtvers=1"
++;wlan0;IPv6;A9C90F6691B0B37E;_appletv-v2._tcp;local
++;wlan0;IPv6;A9C90F6691B0B37E_1;iPod Touch Music Library;local
+=;wlan0;IPv6;28CFDA1A2FDF\064weanis;AirTunes Remote Audio;local;weanis-674.local;192.168.1.171;5000;"vv=2" "vs=200.54" "vn=65537" "tp=UDP" "sf=0x44" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "am=AppleTV2,1" "md=0,1,2" "ft=0x4A7FFFF7,0xE" "et=0,3,5" "da=true" "cn=0,1,2,3"
+=;wlan0;IPv6;weanis\032\0402069\041;_airplay._tcp;local;weanis-674.local;192.168.1.171;7000;"vv=2" "srcvers=200.54" "pk=24c6e185164111fdf99d04019400c1199a17f7f20d7c3aa3a26caf1c704c7be5" "model=AppleTV2,1" "flags=0x44" "features=0x4A7FFFF7,0xE" "deviceid=28:CF:DA:1A:2F:DF"
+=;wlan0;IPv6;70-35-60-63\.1\032weanis\032\0402069\041;_sleep-proxy._udp;local;weanis-674.local;192.168.1.171;60379;
+=;wlan0;IPv6;UA\032Mixer;_uamixer._tcp;local;Shauns-iMac.local;192.168.1.174;4710;
+=;wlan0;IPv4;UA\032Mixer;_uamixer._tcp;local;Shauns-iMac.local;192.168.1.174;4710;
+=;wlan0;IPv6;A9C90F6691B0B37E;_appletv-v2._tcp;local;weanis-674.local;192.168.1.171;3689;"MiTPV=196611" "EiTS=1" "DFID=2" "PrVs=65538" "Name=weanis" "fs=2" "MniT=167845888" "hG=00000000-00c5-5e51-4efd-95be8b654661" "atSV=65541" "txtvers=1"
+=;wlan0;IPv6;A9C90F6691B0B37E_1;iPod Touch Music Library;local;weanis-674.local;192.168.1.171;3689;"Ver=131077" "atCV=65537" "DvSv=1552" "DvTy=AppleTV" "CtlN=weanis" "DbId=2678B86D5A2A30E2" "atSV=65541" "txtvers=1"
+=;eth0;IPv6;Rack\032Addik\032\064\032Kelly\226\128\153s\032MacBook\032Pro;Internet Printer;local;Kellys-MacBook-Pro.local;192.168.1.182;631;"printer-type=0x480901E" "printer-state=3" "Scan=T" "Sort=F" "Bind=F" "Punch=F" "Collate=F" "Copies=F" "Staple=F" "Duplex=T" "Color=T" "Fax=F" "Binary=F" "Transparent=F" "TLS=1.2" "UUID=eea4e14d-2755-3b99-4afe-ed88bdd3d28a" "pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster" "product=(Officejet Pro 8610)" "priority=0" "note=" "adminurl=http://Kellys-MacBook-Pro.local.:631/printers/HP_Officejet_Pro_8610__896537_" "ty=HP Officejet Pro 8610 e-All-in-One" "rp=printers/HP_Officejet_Pro_8610__896537_" "qtotal=1" "txtvers=1"
+=;eth0;IPv4;Rack\032Addik\032\064\032Kelly\226\128\153s\032MacBook\032Pro;Internet Printer;local;Kellys-MacBook-Pro.local;192.168.1.182;631;"printer-type=0x480901E" "printer-state=3" "Scan=T" "Sort=F" "Bind=F" "Punch=F" "Collate=F" "Copies=F" "Staple=F" "Duplex=T" "Color=T" "Fax=F" "Binary=F" "Transparent=F" "TLS=1.2" "UUID=eea4e14d-2755-3b99-4afe-ed88bdd3d28a" "pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster" "product=(Officejet Pro 8610)" "priority=0" "note=" "adminurl=http://Kellys-MacBook-Pro.local.:631/printers/HP_Officejet_Pro_8610__896537_" "ty=HP Officejet Pro 8610 e-All-in-One" "rp=printers/HP_Officejet_Pro_8610__896537_" "qtotal=1" "txtvers=1"
+=;wlan0;IPv4;Rack\032Addik\032\064\032Kelly\226\128\153s\032MacBook\032Pro;Internet Printer;local;Kellys-MacBook-Pro.local;192.168.1.182;631;"printer-type=0x480901E" "printer-state=3" "Scan=T" "Sort=F" "Bind=F" "Punch=F" "Collate=F" "Copies=F" "Staple=F" "Duplex=T" "Color=T" "Fax=F" "Binary=F" "Transparent=F" "TLS=1.2" "UUID=eea4e14d-2755-3b99-4afe-ed88bdd3d28a" "pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster" "product=(Officejet Pro 8610)" "priority=0" "note=" "adminurl=http://Kellys-MacBook-Pro.local.:631/printers/HP_Officejet_Pro_8610__896537_" "ty=HP Officejet Pro 8610 e-All-in-One" "rp=printers/HP_Officejet_Pro_8610__896537_" "qtotal=1" "txtvers=1"
+=;wlan0;IPv6;Rack\032Addik\032\064\032Kelly\226\128\153s\032MacBook\032Pro;Internet Printer;local;Kellys-MacBook-Pro.local;192.168.1.182;631;"printer-type=0x480901E" "printer-state=3" "Scan=T" "Sort=F" "Bind=F" "Punch=F" "Collate=F" "Copies=F" "Staple=F" "Duplex=T" "Color=T" "Fax=F" "Binary=F" "Transparent=F" "TLS=1.2" "UUID=eea4e14d-2755-3b99-4afe-ed88bdd3d28a" "pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster" "product=(Officejet Pro 8610)" "priority=0" "note=" "adminurl=http://Kellys-MacBook-Pro.local.:631/printers/HP_Officejet_Pro_8610__896537_" "ty=HP Officejet Pro 8610 e-All-in-One" "rp=printers/HP_Officejet_Pro_8610__896537_" "qtotal=1" "txtvers=1"
++;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;Web Site;local
++;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_http-alt._tcp;local
+=;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;UNIX Printer;local;HPB05ADA896537.local;192.168.1.181;515;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mac=b0:5a:da:89:65:38" "priority=52" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "kind=document,envelope,photo" "PaperMax=<legal-A4" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "rp=RAW" "qtotal=1" "txtvers=1"
+=;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;PDL Printer;local;HPB05ADA896537.local;192.168.1.181;9100;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mac=b0:5a:da:89:65:38" "priority=40" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "kind=document,envelope,photo" "PaperMax=<legal-A4" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "qtotal=1" "txtvers=1"
+=;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;Internet Printer;local;HPB05ADA896537.local;192.168.1.181;631;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "Fax=F" "note=" "adminurl=http://HPB05ADA896537.local./#hId-pgAirPrint" "mac=b0:5a:da:89:65:38" "priority=20" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "URF=CP1,MT1-2-8-9-10-11,OB9,OFU0,PQ3-4-5,RS300-600,SRGB24,W8-16,DEVW8-16,DEVRGB24-48,ADOBERGB24-48,DM3,IS1-2,V1.3" "kind=document,envelope,photo" "PaperMax=<legal-A4" "rp=ipp/print" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "qtotal=1" "txtvers=1"
+=;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_scanner._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;"feeder=T" "flatbed=T" "button=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mdl=HP Officejet Pro 8610" "mfg=HP" "ty=HP Officejet Pro 8610" "txtvers=1"
+=;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_uscan._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;"duplex=F" "is=platen,adf" "cs=binary,color,grayscale" "rs=eSCL" "representation=images/printer.png" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "ty=HP HP Officejet Pro 8610" "pdl=application/octet-stream,application/pdf,image/jpeg" "vers=2.0" "txtvers=1"
++;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;Web Site;local
++;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_http-alt._tcp;local
+=;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;UNIX Printer;local;HPB05ADA896537.local;192.168.1.181;515;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mac=b0:5a:da:89:65:38" "priority=52" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "kind=document,envelope,photo" "PaperMax=<legal-A4" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "rp=RAW" "qtotal=1" "txtvers=1"
+=;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;PDL Printer;local;HPB05ADA896537.local;192.168.1.181;9100;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mac=b0:5a:da:89:65:38" "priority=40" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "kind=document,envelope,photo" "PaperMax=<legal-A4" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "qtotal=1" "txtvers=1"
+=;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;Internet Printer;local;HPB05ADA896537.local;192.168.1.181;631;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "Fax=F" "note=" "adminurl=http://HPB05ADA896537.local./#hId-pgAirPrint" "mac=b0:5a:da:89:65:38" "priority=20" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "URF=CP1,MT1-2-8-9-10-11,OB9,OFU0,PQ3-4-5,RS300-600,SRGB24,W8-16,DEVW8-16,DEVRGB24-48,ADOBERGB24-48,DM3,IS1-2,V1.3" "kind=document,envelope,photo" "PaperMax=<legal-A4" "rp=ipp/print" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "qtotal=1" "txtvers=1"
+=;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_scanner._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;"feeder=T" "flatbed=T" "button=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mdl=HP Officejet Pro 8610" "mfg=HP" "ty=HP Officejet Pro 8610" "txtvers=1"
+=;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_uscan._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;"duplex=F" "is=platen,adf" "cs=binary,color,grayscale" "rs=eSCL" "representation=images/printer.png" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "ty=HP HP Officejet Pro 8610" "pdl=application/octet-stream,application/pdf,image/jpeg" "vers=2.0" "txtvers=1"
+=;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;Web Site;local;HPB05ADA896537.local;192.168.1.181;80;
+=;eth0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_http-alt._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;
+=;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;Web Site;local;HPB05ADA896537.local;192.168.1.181;80;
+=;eth0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_http-alt._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;
++;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;Web Site;local
++;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_http-alt._tcp;local
+=;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;UNIX Printer;local;HPB05ADA896537.local;192.168.1.181;515;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mac=b0:5a:da:89:65:38" "priority=52" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "kind=document,envelope,photo" "PaperMax=<legal-A4" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "rp=RAW" "qtotal=1" "txtvers=1"
+=;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;PDL Printer;local;HPB05ADA896537.local;192.168.1.181;9100;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mac=b0:5a:da:89:65:38" "priority=40" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "kind=document,envelope,photo" "PaperMax=<legal-A4" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "qtotal=1" "txtvers=1"
+=;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;Internet Printer;local;HPB05ADA896537.local;192.168.1.181;631;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "Fax=F" "note=" "adminurl=http://HPB05ADA896537.local./#hId-pgAirPrint" "mac=b0:5a:da:89:65:38" "priority=20" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "URF=CP1,MT1-2-8-9-10-11,OB9,OFU0,PQ3-4-5,RS300-600,SRGB24,W8-16,DEVW8-16,DEVRGB24-48,ADOBERGB24-48,DM3,IS1-2,V1.3" "kind=document,envelope,photo" "PaperMax=<legal-A4" "rp=ipp/print" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "qtotal=1" "txtvers=1"
+=;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_scanner._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;"feeder=T" "flatbed=T" "button=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mdl=HP Officejet Pro 8610" "mfg=HP" "ty=HP Officejet Pro 8610" "txtvers=1"
+=;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_uscan._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;"duplex=F" "is=platen,adf" "cs=binary,color,grayscale" "rs=eSCL" "representation=images/printer.png" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "ty=HP HP Officejet Pro 8610" "pdl=application/octet-stream,application/pdf,image/jpeg" "vers=2.0" "txtvers=1"
++;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;Web Site;local
++;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_http-alt._tcp;local
+=;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;UNIX Printer;local;HPB05ADA896537.local;192.168.1.181;515;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mac=b0:5a:da:89:65:38" "priority=52" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "kind=document,envelope,photo" "PaperMax=<legal-A4" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "rp=RAW" "qtotal=1" "txtvers=1"
+=;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;PDL Printer;local;HPB05ADA896537.local;192.168.1.181;9100;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mac=b0:5a:da:89:65:38" "priority=40" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "kind=document,envelope,photo" "PaperMax=<legal-A4" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "qtotal=1" "txtvers=1"
+=;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;Internet Printer;local;HPB05ADA896537.local;192.168.1.181;631;"Scan=T" "Duplex=T" "Color=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "Fax=F" "note=" "adminurl=http://HPB05ADA896537.local./#hId-pgAirPrint" "mac=b0:5a:da:89:65:38" "priority=20" "usb_MDL=HP Officejet Pro 8610" "usb_MFG=HP" "product=(HP Officejet Pro 8610)" "ty=HP Officejet Pro 8610" "URF=CP1,MT1-2-8-9-10-11,OB9,OFU0,PQ3-4-5,RS300-600,SRGB24,W8-16,DEVW8-16,DEVRGB24-48,ADOBERGB24-48,DM3,IS1-2,V1.3" "kind=document,envelope,photo" "PaperMax=<legal-A4" "rp=ipp/print" "pdl=application/vnd.hp-PCL,image/jpeg,application/PCLm,image/urf" "qtotal=1" "txtvers=1"
+=;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_scanner._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;"feeder=T" "flatbed=T" "button=T" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "mdl=HP Officejet Pro 8610" "mfg=HP" "ty=HP Officejet Pro 8610" "txtvers=1"
+=;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_uscan._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;"duplex=F" "is=platen,adf" "cs=binary,color,grayscale" "rs=eSCL" "representation=images/printer.png" "UUID=1c852a4d-b800-1f08-abcd-b05ada896537" "note=" "adminurl=http://HPB05ADA896537.local." "ty=HP HP Officejet Pro 8610" "pdl=application/octet-stream,application/pdf,image/jpeg" "vers=2.0" "txtvers=1"
+=;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;Web Site;local;HPB05ADA896537.local;192.168.1.181;80;
+=;wlan0;IPv4;HP\032Officejet\032Pro\0328610\032\091896537\093;_http-alt._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;
+=;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;Web Site;local;HPB05ADA896537.local;192.168.1.181;80;
+=;wlan0;IPv6;HP\032Officejet\032Pro\0328610\032\091896537\093;_http-alt._tcp;local;HPB05ADA896537.local;192.168.1.181;8080;

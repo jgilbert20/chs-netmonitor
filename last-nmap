@@ -1,24 +1,24 @@
 
-Starting Nmap 6.47 ( http://nmap.org ) at 2016-07-11 10:11 EDT
-Warning: 192.168.1.171 giving up on port because retransmission cap hit (6).
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-07-11 10:40 EDT
+Warning: 192.168.1.180 giving up on port because retransmission cap hit (6).
 Nmap scan report for 192.168.1.1
-Host is up (0.0067s latency).
+Host is up (0.0015s latency).
 Not shown: 994 closed ports
-PORT     STATE SERVICE VERSION
-21/tcp   open  ftp     D-Link DLS-2750U ftp firmward update
-23/tcp   open  telnet  Broadcom BCM96328 ADSL router telnetd
-80/tcp   open  http    micro_httpd
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         D-Link DLS-2750U ftp firmward update
+23/tcp   open  telnet      Broadcom BCM96328 ADSL router telnetd
+80/tcp   open  http        micro_httpd
 |_http-methods: No Allow or Public header in OPTIONS response (status code 501)
 |_http-title: Actiontec
-443/tcp  open  http    micro_httpd
+443/tcp  open  http        micro_httpd
 |_http-methods: No Allow or Public header in OPTIONS response (status code 501)
 |_http-title: Actiontec
 4567/tcp open  tram?
-5431/tcp open  upnp    Belkin/Linksys wireless router UPnP (UPnP 1.0; BRCM400 1.0)
-Service Info: OS: Linux 2.4; Devices: WAP, broadband router, router; CPE: cpe:/h:dlink:dls-2750u, cpe:/h:broadcom:bcm96328, cpe:/o:linux:linux_kernel:2.4
+5431/tcp open  park-agent?
+Service Info: Devices: WAP, broadband router; CPE: cpe:/h:dlink:dls-2750u, cpe:/h:broadcom:bcm96328
 
 Nmap scan report for 192.168.1.2 (192.168.1.2)
-Host is up (0.00057s latency).
+Host is up (0.00055s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE VERSION
 53/tcp open  domain  dnsmasq 2.73
@@ -29,7 +29,7 @@ PORT   STATE SERVICE VERSION
 |_http-title: Site doesn't have a title (text/html).
 
 Nmap scan report for 192.168.1.4
-Host is up (0.0038s latency).
+Host is up (0.0011s latency).
 Not shown: 993 closed ports
 PORT     STATE SERVICE        VERSION
 21/tcp   open  ftp            MikroTik router ftpd 6.29.1
@@ -48,7 +48,7 @@ PORT     STATE SERVICE        VERSION
 Service Info: Host: chs-net4; OSs: Linux, RouterOS; Device: router; CPE: cpe:/o:linux:linux_kernel
 
 Nmap scan report for 192.168.1.8
-Host is up (0.010s latency).
+Host is up (0.00092s latency).
 Not shown: 996 closed ports
 PORT    STATE SERVICE    VERSION
 22/tcp  open  ssh        Dropbear sshd 2015.67 (protocol 2.0)
@@ -63,11 +63,11 @@ PORT    STATE SERVICE    VERSION
 | ssl-cert: Subject: commonName=NewMedia-NET GmbH/organizationName=NewMedia-NET GmbH/stateOrProvinceName=Saxon/countryName=DE
 | Not valid before: 2016-02-19T09:23:37+00:00
 |_Not valid after:  2026-02-16T09:23:37+00:00
-|_ssl-date: 2021-12-14T23:28:27+00:00; +5y156d9h13m41s from local time.
+|_ssl-date: 1982-12-03T20:39:40+00:00; -33y220d18h04m06s from local time.
 Service Info: OS: Linux; Device: WAP; CPE: cpe:/o:linux:linux_kernel
 
 Nmap scan report for 192.168.1.10
-Host is up (0.011s latency).
+Host is up (0.00080s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     (protocol 2.0)
@@ -76,11 +76,11 @@ PORT   STATE SERVICE VERSION
 |_http-methods: No Allow or Public header in OPTIONS response (status code 405)
 |_http-title: Welcome to nginx on Debian!
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
-SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783A93F%P=arm-unknown-linux-gnueabih
+SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueabih
 SF:f%r(NULL,22,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\r\n");
 
 Nmap scan report for 192.168.1.11
-Host is up (0.0042s latency).
+Host is up (0.00062s latency).
 Not shown: 998 closed ports
 PORT     STATE SERVICE VERSION
 22/tcp   open  ssh     (protocol 2.0)
@@ -88,10 +88,10 @@ PORT     STATE SERVICE VERSION
 3000/tcp open  ppp?
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783A93F%P=arm-unknown-linux-gnueabih
+SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueabih
 SF:f%r(NULL,29,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\+deb8u2\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port3000-TCP:V=6.47%I=7%D=7/11%Time=5783A940%P=arm-unknown-linux-gnueab
+SF-Port3000-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueab
 SF:ihf%r(GenericLines,6E,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-L
 SF:ength:\x2042\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20
 SF:Error\nBad\x20request:\x20\[\r\n\r\]")%r(GetRequest,94,"HTTP/1\.1\x2030
@@ -123,7 +123,7 @@ SF:2048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nC
 SF:lient\x20closed\x20connection");
 
 Nmap scan report for 192.168.1.12 (192.168.1.12)
-Host is up (0.011s latency).
+Host is up (0.00049s latency).
 Not shown: 998 closed ports
 PORT     STATE SERVICE VERSION
 22/tcp   open  ssh     (protocol 2.0)
@@ -131,10 +131,10 @@ PORT     STATE SERVICE VERSION
 3000/tcp open  ppp?
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783A93F%P=arm-unknown-linux-gnueabih
+SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueabih
 SF:f%r(NULL,29,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\+deb8u2\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port3000-TCP:V=6.47%I=7%D=7/11%Time=5783A940%P=arm-unknown-linux-gnueab
+SF-Port3000-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueab
 SF:ihf%r(GenericLines,6E,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-L
 SF:ength:\x2042\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20
 SF:Error\nBad\x20request:\x20\[\r\n\r\]")%r(GetRequest,94,"HTTP/1\.1\x2030
@@ -166,7 +166,7 @@ SF:2048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nC
 SF:lient\x20closed\x20connection");
 
 Nmap scan report for 192.168.1.15
-Host is up (0.0014s latency).
+Host is up (0.012s latency).
 Not shown: 996 filtered ports
 PORT    STATE SERVICE VERSION
 22/tcp  open  ssh?
@@ -175,9 +175,24 @@ PORT    STATE SERVICE VERSION
 80/tcp  open  http?
 443/tcp open  https?
 
+Nmap scan report for 192.168.1.135 (192.168.1.135)
+Host is up (0.0027s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.9 (protocol 2.0)
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+
+Nmap scan report for 192.168.1.136
+Host is up (0.015s latency).
+All 1000 scanned ports on 192.168.1.136 are closed
+
+Nmap scan report for 192.168.1.160
+Host is up (0.0026s latency).
+All 1000 scanned ports on 192.168.1.160 are closed
+
 Nmap scan report for 192.168.1.171 (192.168.1.171)
-Host is up (0.0070s latency).
-Not shown: 964 closed ports, 31 filtered ports
+Host is up (0.011s latency).
+Not shown: 995 closed ports
 PORT      STATE SERVICE    VERSION
 3689/tcp  open  daap       Apple iTunes DAAP 11.1b37
 5000/tcp  open  rtsp       Apple AirTunes rtspd 200.54 (Apple TV)
@@ -193,8 +208,12 @@ PORT      STATE SERVICE    VERSION
 62078/tcp open  tcpwrapped
 Service Info: OSs: OS X, Mac OS X; Device: media device; CPE: cpe:/o:apple:mac_os_x
 
-Nmap scan report for 192.168.1.179
-Host is up (0.0034s latency).
+Nmap scan report for 192.168.1.174
+Host is up (0.0012s latency).
+All 1000 scanned ports on 192.168.1.174 are closed
+
+Nmap scan report for netmon0 (192.168.1.179)
+Host is up (0.00097s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     (protocol 2.0)
@@ -203,41 +222,31 @@ PORT   STATE SERVICE VERSION
 |_http-methods: No Allow or Public header in OPTIONS response (status code 405)
 |_http-title: Welcome to nginx on Debian!
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
-SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783A93F%P=arm-unknown-linux-gnueabih
+SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueabih
 SF:f%r(NULL,22,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\r\n");
 
-Nmap scan report for 192.168.1.181
-Host is up (0.0052s latency).
-Not shown: 989 closed ports
-PORT     STATE SERVICE     VERSION
-80/tcp   open  http        HP HTTP Server; HP HP Officejet Pro 8610 - A7F64A; Serial Number: CN597F30NR; Bu
-| http-methods: Potentially risky methods: PUT DELETE
-|_See http://nmap.org/nsedoc/scripts/http-methods.html
-|_http-title: Site doesn't have a title (text/html).
-139/tcp  open  tcpwrapped
-443/tcp  open  ssl/https   HP HTTP Server; HP HP Officejet Pro 8610 - A7F64A; Serial Number: CN597F30NR; Bu
-| http-methods: Potentially risky methods: PUT DELETE
-|_See http://nmap.org/nsedoc/scripts/http-methods.html
-|_http-title: Site doesn't have a title (text/html).
-| ssl-cert: Subject: commonName=HP896537/organizationName=HP/stateOrProvinceName=Washington/countryName=US
-| Not valid before: 2015-01-09T16:48:51+00:00
-|_Not valid after:  2035-01-04T16:48:51+00:00
-445/tcp  open  netbios-ssn
-515/tcp  open  printer
-631/tcp  open  ipp         HP HTTP Server; HP HP Officejet Pro 8610 - A7F64A; Serial Number: CN597F30NR; Bu
-| http-methods: Potentially risky methods: PUT DELETE
-|_See http://nmap.org/nsedoc/scripts/http-methods.html
-6839/tcp open  tcpwrapped
-7435/tcp open  tcpwrapped
-8080/tcp open  http-proxy  HP HTTP Server; HP HP Officejet Pro 8610 - A7F64A; Serial Number: CN597F30NR; Bu
-| http-methods: Potentially risky methods: PUT DELETE
-|_See http://nmap.org/nsedoc/scripts/http-methods.html
-|_http-title: Site doesn't have a title (text/html).
-9100/tcp open  jetdirect?
-9220/tcp open  unknown
+Nmap scan report for 192.168.1.180
+Host is up (0.0032s latency).
+Not shown: 806 closed ports, 193 filtered ports
+PORT      STATE SERVICE    VERSION
+62078/tcp open  tcpwrapped
 
-Host script results:
-|_nbstat: NetBIOS name: HPB05ADA896538, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+Nmap scan report for 192.168.1.182 (192.168.1.182)
+Host is up (0.0012s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE VERSION
+631/tcp  open  ipp     CUPS 1.5
+| http-methods: Potentially risky methods: PUT
+|_See http://nmap.org/nsedoc/scripts/http-methods.html
+|_http-title: Web Interface is Disabled - CUPS v1.5.4
+1947/tcp open  http    Aladdin HASP license manager 17.00
+|_http-methods: No Allow or Public header in OPTIONS response (status code 501)
+|_http-title: 403 Forbidden
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.1.183
+Host is up (0.0075s latency).
+All 1000 scanned ports on 192.168.1.183 are closed
 
 Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
-Nmap done: 256 IP addresses (11 hosts up) scanned in 374.14 seconds
+Nmap done: 256 IP addresses (17 hosts up) scanned in 400.77 seconds
