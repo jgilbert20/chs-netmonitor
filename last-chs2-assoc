@@ -1,14 +1,14 @@
-***Started: Sat Jul  9 14:47:06 EDT 2016
+***Started: Mon Jul 11 10:38:42 EDT 2016
 Station 28:cf:da:1a:2f:de (on wlan1)
-	inactive time:	3650 ms
-	rx bytes:	268440725
-	rx packets:	2273278
-	tx bytes:	558181112
-	tx packets:	6263150
-	tx retries:	302032
-	tx failed:	34
-	signal:  	-64 [-68, -68, -69] dBm
-	signal avg:	-63 [-68, -66, -68] dBm
+	inactive time:	600 ms
+	rx bytes:	343091188
+	rx packets:	2972394
+	tx bytes:	2291663514
+	tx packets:	7668017
+	tx retries:	532596
+	tx failed:	57
+	signal:  	-62 [-65, -73, -67] dBm
+	signal avg:	-62 [-65, -72, -68] dBm
 	tx bitrate:	58.5 MBit/s MCS 6
 	rx bitrate:	65.0 MBit/s MCS 7
 	expected throughput:	30.166Mbps
@@ -18,19 +18,95 @@ Station 28:cf:da:1a:2f:de (on wlan1)
 	WMM/WME:	yes
 	MFP:		no
 	TDLS peer:	no
+Station 20:c9:d0:c4:dd:7d (on wlan1)
+	inactive time:	390 ms
+	rx bytes:	97144
+	rx packets:	921
+	tx bytes:	37365
+	tx packets:	304
+	tx retries:	41
+	tx failed:	1
+	signal:  	-67 [-78, -71, -69] dBm
+	signal avg:	-67 [-77, -69, -70] dBm
+	tx bitrate:	58.5 MBit/s MCS 18
+	rx bitrate:	6.0 MBit/s
+	expected throughput:	30.166Mbps
+	authorized:	yes
+	authenticated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+Station b4:4b:d2:26:f3:c3 (on wlan1)
+	inactive time:	150 ms
+	rx bytes:	3661
+	rx packets:	71
+	tx bytes:	12146
+	tx packets:	57
+	tx retries:	152
+	tx failed:	16
+	signal:  	-81 [-89, -83, -86] dBm
+	signal avg:	-78 [-85, -83, -82] dBm
+	tx bitrate:	6.5 MBit/s MCS 0
+	rx bitrate:	24.0 MBit/s
+	expected throughput:	1.674Mbps
+	authorized:	yes
+	authenticated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
 Station 94:10:3e:79:63:a8 (on wlan0)
-	inactive time:	2160 ms
-	rx bytes:	28851520
-	rx packets:	296540
-	tx bytes:	508946068
-	tx packets:	354302
-	tx retries:	112582
-	tx failed:	10
-	signal:  	-60 [-69, -61] dBm
-	signal avg:	-60 [-67, -61] dBm
-	tx bitrate:	117.0 MBit/s MCS 14
-	rx bitrate:	52.0 MBit/s MCS 11
-	expected throughput:	27.657Mbps
+	inactive time:	1400 ms
+	rx bytes:	279177890
+	rx packets:	2903988
+	tx bytes:	793293336
+	tx packets:	3552749
+	tx retries:	939435
+	tx failed:	40
+	signal:  	-55 [-58, -57] dBm
+	signal avg:	-55 [-59, -58] dBm
+	tx bitrate:	130.0 MBit/s MCS 14 short GI
+	rx bitrate:	1.0 MBit/s
+	expected throughput:	45.117Mbps
+	authorized:	yes
+	authenticated:	yes
+	preamble:	short
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+Station b0:5a:da:89:65:38 (on wlan0)
+	inactive time:	34740 ms
+	rx bytes:	5078225
+	rx packets:	49299
+	tx bytes:	1213969
+	tx packets:	10609
+	tx retries:	3468
+	tx failed:	3
+	signal:  	-60 [-61, -65] dBm
+	signal avg:	-58 [-60, -63] dBm
+	tx bitrate:	57.8 MBit/s MCS 5 short GI
+	rx bitrate:	26.0 MBit/s MCS 3
+	expected throughput:	30.29Mbps
+	authorized:	yes
+	authenticated:	yes
+	preamble:	short
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+Station 20:c9:d0:c4:dd:7d (on wlan0)
+	inactive time:	67840 ms
+	rx bytes:	288405
+	rx packets:	3072
+	tx bytes:	301362
+	tx packets:	1329
+	tx retries:	1099
+	tx failed:	11
+	signal:  	-65 [-68, -68] dBm
+	signal avg:	-60 [-64, -63] dBm
+	tx bitrate:	104.0 MBit/s MCS 13
+	rx bitrate:	1.0 MBit/s
+	expected throughput:	33.663Mbps
 	authorized:	yes
 	authenticated:	yes
 	preamble:	short
@@ -38,55 +114,36 @@ Station 94:10:3e:79:63:a8 (on wlan0)
 	MFP:		no
 	TDLS peer:	no
 Station 7c:d1:c3:76:71:d6 (on wlan0)
-	inactive time:	200 ms
-	rx bytes:	32847172
-	rx packets:	124393
-	tx bytes:	136594146
-	tx packets:	151632
-	tx retries:	54780
-	tx failed:	37
-	signal:  	-50 [-56, -51] dBm
-	signal avg:	-51 [-56, -54] dBm
+	inactive time:	560 ms
+	rx bytes:	7126461
+	rx packets:	35254
+	tx bytes:	79953618
+	tx packets:	62049
+	tx retries:	23061
+	tx failed:	1
+	signal:  	-44 [-51, -45] dBm
+	signal avg:	-46 [-53, -47] dBm
 	tx bitrate:	130.0 MBit/s MCS 15
 	rx bitrate:	1.0 MBit/s
-	expected throughput:	35.338Mbps
+	expected throughput:	39.248Mbps
 	authorized:	yes
 	authenticated:	yes
 	preamble:	short
 	WMM/WME:	yes
 	MFP:		no
 	TDLS peer:	no
-Station 00:56:cd:3f:dc:23 (on wlan0)
-	inactive time:	10580 ms
-	rx bytes:	870492
-	rx packets:	8092
-	tx bytes:	11273641
-	tx packets:	8516
-	tx retries:	3333
-	tx failed:	4
-	signal:  	-61 [-61, -71] dBm
-	signal avg:	-64 [-66, -71] dBm
-	tx bitrate:	39.0 MBit/s MCS 4
+Station b4:4b:d2:26:f3:c3 (on wlan0)
+	inactive time:	80 ms
+	rx bytes:	12393
+	rx packets:	326
+	tx bytes:	7913
+	tx packets:	53
+	tx retries:	35
+	tx failed:	1
+	signal:  	-74 [-78, -76] dBm
+	signal avg:	-72 [-80, -74] dBm
+	tx bitrate:	19.5 MBit/s MCS 2
 	rx bitrate:	1.0 MBit/s
-	expected throughput:	20.250Mbps
-	authorized:	yes
-	authenticated:	yes
-	preamble:	short
-	WMM/WME:	yes
-	MFP:		no
-	TDLS peer:	no
-Station 58:94:6b:b0:a5:a0 (on wlan0)
-	inactive time:	310 ms
-	rx bytes:	27104590
-	rx packets:	95050
-	tx bytes:	92630452
-	tx packets:	110469
-	tx retries:	81973
-	tx failed:	419
-	signal:  	-75 [-78, -77] dBm
-	signal avg:	-75 [-78, -78] dBm
-	tx bitrate:	43.3 MBit/s MCS 4 short GI
-	rx bitrate:	5.5 MBit/s
 	expected throughput:	12.991Mbps
 	authorized:	yes
 	authenticated:	yes

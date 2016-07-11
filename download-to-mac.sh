@@ -1,13 +1,42 @@
 #!/bin/sh
 
 
+** CREATE TABLE `flowsv4` (
+**   `idx` int(11) NOT NULL AUTO_INCREMENT,
+**   `VLAN_ID` smallint(5) unsigned DEFAULT NULL,
+**   `L7_PROTO` smallint(5) unsigned DEFAULT NULL,
+**   `IP_SRC_ADDR` int(10) unsigned DEFAULT NULL,
+**   `L4_SRC_PORT` smallint(5) unsigned DEFAULT NULL,
+**   `IP_DST_ADDR` int(10) unsigned DEFAULT NULL,
+**   `L4_DST_PORT` smallint(5) unsigned DEFAULT NULL,
+**   `PROTOCOL` tinyint(3) unsigned DEFAULT NULL,
+**   `IN_BYTES` int(10) DEFAULT '0',
+**   `OUT_BYTES` int(10) DEFAULT '0',
+**   `PACKETS` int(10) unsigned DEFAULT NULL,
+**   `FIRST_SWITCHED` int(10) unsigned DEFAULT NULL,
+**   `LAST_SWITCHED` int(10) unsigned DEFAULT NULL,
+**   `INFO` varchar(255) DEFAULT NULL,
+**   `JSON` blob,
+**   `NTOPNG_INSTANCE_NAME` varchar(256) DEFAULT NULL,
+**   `INTERFACE_ID` smallint(5) DEFAULT NULL,
+**   KEY `idx` (`idx`,`IP_SRC_ADDR`,`IP_DST_ADDR`,`FIRST_SWITCHED`,`LAST_SWITCHED`,`INFO`(200)),
+**   KEY `ix_flowsv4_4_ntopng_instance_name` (`NTOPNG_INSTANCE_NAME`(255)),
+**   KEY `ix_flowsv4_ntopng_first_src_dst` (`FIRST_SWITCHED`,`IP_SRC_ADDR`,`IP_DST_ADDR`)
+** ) ENGINE=MyISAM AUTO_INCREMENT=567550 DEFAULT CHARSET=utf8
+** /*!50100 PARTITION BY HASH (`FIRST_SWITCHED`)
+** PARTITIONS 32 */;
+** /*!40101 SET character_set_client = @saved_cs_client */;
+
+
+
+
 rsync pi@108.7.147.14:src/chs-netmonitor/strutured-log.tsv .
 grep SUMMARY strutured-log.tsv > summary.tsv
 
 
 sudo rm -rf /tmp/ntopng-export.txt
 mysql -u root ntopng
-select IDX, IP_SRC_ADDR,L4_SRC_PORT,IP_DST_ADDR,L4_DST_PORT,PROTOCOL,L7_PROTO IN_BYTES,OUT_BYTES,PACKETS,FIRST_SWITCHED,LAST_SWITCHED,info from flowsv4 order by idx into outfile '/tmp/ntopng-export.txt';
+select IDX, IP_SRC_ADDR,L4_SRC_PORT,IP_DST_ADDR,L4_DST_PORT,PROTOCOL,L7_PROTO, IN_BYTES,OUT_BYTES,PACKETS,FIRST_SWITCHED,LAST_SWITCHED,info,INTERFACE_ID from flowsv4 order by idx into outfile '/tmp/ntopng-export.txt';
 
 
 rsync -z pi@108.7.147.14:/tmp/ntopng-export.txt . 
@@ -34,11 +63,26 @@ CREATE TABLE `flows` (
   `pkts` int(10) unsigned DEFAULT NULL,
   `first` int(10) unsigned DEFAULT NULL,
   `last` int(10) unsigned DEFAULT NULL,
-  `INFO` varchar(255) DEFAULT NULL );
+  `INFO` varchar(255) DEFAULT NULL,
+  `INTERFACE_ID` smallint(5) DEFAULT NULL );
 
 LOAD DATA LOCAL INFILE '/Users/jgilbert/src/chs-netmonitor/ntopng-export.txt' INTO table flows;
 
-perl slurp-ndpi-protocols.pl
+# perl slurp-ndpi-protocols.pl
+
+drop table l7_protocols;
+create table l7_protocols ( `l7_name` varchar(255) ,  `l7_number` int(10) );
+LOAD DATA LOCAL INFILE '/Users/jgilbert/src/chs-netmonitor/ndpi-protocols.txt' INTO table l7_protocols;
+
+
+
+alter table flows add column srcip varchar(20);
+alter table flows add column destip varchar(20);
+alter table flows add column l7p varchar(40);
+update flows set destip = INET_NTOA(dest);
+update flows set srcip = INET_NTOA(src);
+
+
 
 
 
@@ -152,5 +196,21 @@ select flows.info, sum(bin) sbin, sum(bout) sbout from flows,hostnames where flo
 select category, sum(bin) sbin, sum(bout) sbout from flows,hostnames where flows.info = hostnames.info  group by category order by sbout desc limit 100;
 
 select INET_NTOA(src) src_ip,category, sum(bin) sbin, sum(bout) sbout from flows,hostnames where INET_NTOA(src) like '192.168.1.%' and flows.info = hostnames.info group by src_ip,category order by src_ip,category,sbout desc;
+
+
+-- Check l7_protocols outside
+
+select l7_name,l7_proto, sum(bin) sbin, sum(bout) sbout from flows,l7_protocols where INET_NTOA(src) like '192.168.1.%' and INET_NTOA(dest) not like '192.168.1.%' and l7_proto=l7_number by l7_name,l7_proto order by sbout;
+
+-- Create analysis table:
+
+create table newflows as select INET_NTOA(src) src, INET_NTOA(dest) dest, info, INET_NTOA(src) like '192.168.1.%' and INET_NTOA(dest) not like '192.168.1.%' outbound, INET_NTOA(src) not like '192.168.1.%' and INET_NTOA(dest) like '192.168.1.%' inbound, src_port,dest_port, protocol ip_prot, l7_name l7_prot, bin/1024 kin, bout/1024 kout, from_unixtime(first) first, from_unixtime(last) last from flows, l7_protocols where l7_proto=l7_number;
+delete from newflows where src like '10.0.1.%' or dest like '10.0.1.%';
+
+-- Traffic by protocol
+
+select l7_prot, sum(kin), sum(kout) from newflows group by l7_prot;
+
+
 
 

@@ -1,25 +1,24 @@
 
-Starting Nmap 6.47 ( http://nmap.org ) at 2016-07-09 14:48 EDT
-Warning: 192.168.1.136 giving up on port because retransmission cap hit (6).
-Warning: 192.168.1.171 giving up on port because retransmission cap hit (6).
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-07-11 10:40 EDT
+Warning: 192.168.1.180 giving up on port because retransmission cap hit (6).
 Nmap scan report for 192.168.1.1
-Host is up (0.0023s latency).
+Host is up (0.0015s latency).
 Not shown: 994 closed ports
-PORT     STATE SERVICE VERSION
-21/tcp   open  ftp     D-Link DLS-2750U ftp firmward update
-23/tcp   open  telnet  Broadcom BCM96328 ADSL router telnetd
-80/tcp   open  http    micro_httpd
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         D-Link DLS-2750U ftp firmward update
+23/tcp   open  telnet      Broadcom BCM96328 ADSL router telnetd
+80/tcp   open  http        micro_httpd
 |_http-methods: No Allow or Public header in OPTIONS response (status code 501)
 |_http-title: Actiontec
-443/tcp  open  http    micro_httpd
+443/tcp  open  http        micro_httpd
 |_http-methods: No Allow or Public header in OPTIONS response (status code 501)
 |_http-title: Actiontec
 4567/tcp open  tram?
-5431/tcp open  upnp    Belkin/Linksys wireless router UPnP (UPnP 1.0; BRCM400 1.0)
-Service Info: OS: Linux 2.4; Devices: WAP, broadband router, router; CPE: cpe:/h:dlink:dls-2750u, cpe:/h:broadcom:bcm96328, cpe:/o:linux:linux_kernel:2.4
+5431/tcp open  park-agent?
+Service Info: Devices: WAP, broadband router; CPE: cpe:/h:dlink:dls-2750u, cpe:/h:broadcom:bcm96328
 
 Nmap scan report for 192.168.1.2 (192.168.1.2)
-Host is up (0.00077s latency).
+Host is up (0.00055s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE VERSION
 53/tcp open  domain  dnsmasq 2.73
@@ -30,7 +29,7 @@ PORT   STATE SERVICE VERSION
 |_http-title: Site doesn't have a title (text/html).
 
 Nmap scan report for 192.168.1.4
-Host is up (0.0012s latency).
+Host is up (0.0011s latency).
 Not shown: 993 closed ports
 PORT     STATE SERVICE        VERSION
 21/tcp   open  ftp            MikroTik router ftpd 6.29.1
@@ -49,7 +48,7 @@ PORT     STATE SERVICE        VERSION
 Service Info: Host: chs-net4; OSs: Linux, RouterOS; Device: router; CPE: cpe:/o:linux:linux_kernel
 
 Nmap scan report for 192.168.1.8
-Host is up (0.00096s latency).
+Host is up (0.00092s latency).
 Not shown: 996 closed ports
 PORT    STATE SERVICE    VERSION
 22/tcp  open  ssh        Dropbear sshd 2015.67 (protocol 2.0)
@@ -64,11 +63,11 @@ PORT    STATE SERVICE    VERSION
 | ssl-cert: Subject: commonName=NewMedia-NET GmbH/organizationName=NewMedia-NET GmbH/stateOrProvinceName=Saxon/countryName=DE
 | Not valid before: 2016-02-19T09:23:37+00:00
 |_Not valid after:  2026-02-16T09:23:37+00:00
-|_ssl-date: 1973-05-03T03:05:09+00:00; -43y67d15h46m49s from local time.
+|_ssl-date: 1982-12-03T20:39:40+00:00; -33y220d18h04m06s from local time.
 Service Info: OS: Linux; Device: WAP; CPE: cpe:/o:linux:linux_kernel
 
 Nmap scan report for 192.168.1.10
-Host is up (0.0015s latency).
+Host is up (0.00080s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     (protocol 2.0)
@@ -77,11 +76,11 @@ PORT   STATE SERVICE VERSION
 |_http-methods: No Allow or Public header in OPTIONS response (status code 405)
 |_http-title: Welcome to nginx on Debian!
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
-SF-Port22-TCP:V=6.47%I=7%D=7/9%Time=5781474B%P=arm-unknown-linux-gnueabihf
-SF:%r(NULL,22,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\r\n");
+SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueabih
+SF:f%r(NULL,22,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\r\n");
 
 Nmap scan report for 192.168.1.11
-Host is up (0.00050s latency).
+Host is up (0.00062s latency).
 Not shown: 998 closed ports
 PORT     STATE SERVICE VERSION
 22/tcp   open  ssh     (protocol 2.0)
@@ -89,144 +88,132 @@ PORT     STATE SERVICE VERSION
 3000/tcp open  ppp?
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port22-TCP:V=6.47%I=7%D=7/9%Time=5781474B%P=arm-unknown-linux-gnueabihf
-SF:%r(NULL,29,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\+deb8u2\r\n");
+SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueabih
+SF:f%r(NULL,29,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\+deb8u2\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port3000-TCP:V=6.47%I=7%D=7/9%Time=5781474B%P=arm-unknown-linux-gnueabi
-SF:hf%r(GenericLines,6E,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Le
-SF:ngth:\x2042\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20E
-SF:rror\nBad\x20request:\x20\[\r\n\r\]")%r(GetRequest,94,"HTTP/1\.1\x20302
-SF:\x20Found\r\nSet-Cookie:\x20session=;\x20path=/;\x20expires=Thu,\x2001-
-SF:Jan-1970\x2000:00:01\x20GMT;\x20max-age=0;\x20HttpOnly\r\nLocation:\x20
-SF:/lua/login\.lua\?referer=/\r\n\r\n")%r(NCP,74,"HTTP/1\.1\x20500\x20Serv
-SF:er\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r\nErr
-SF:or\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(HTTPO
-SF:ptions,94,"HTTP/1\.1\x20302\x20Found\r\nSet-Cookie:\x20session=;\x20pat
-SF:h=/;\x20expires=Thu,\x2001-Jan-1970\x2000:00:01\x20GMT;\x20max-age=0;\x
-SF:20HttpOnly\r\nLocation:\x20/lua/login\.lua\?referer=/\r\n\r\n")%r(RTSPR
-SF:equest,72,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2046
-SF:\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nBad\x
-SF:20request:\x20\[OPTIONS\]")%r(RPCCheck,74,"HTTP/1\.1\x20500\x20Server\x
-SF:20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r\nError\x
-SF:20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(DNSVersio
-SF:nBindReq,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x20
-SF:48\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nCli
-SF:ent\x20closed\x20connection")%r(DNSStatusRequest,74,"HTTP/1\.1\x20500\x
-SF:20Server\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\
-SF:r\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r
-SF:(SSLSessionReq,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Lengt
-SF:h:\x2048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Erro
-SF:r\nClient\x20closed\x20connection")%r(Kerberos,74,"HTTP/1\.1\x20500\x20
-SF:Server\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r\
-SF:nError\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(S
-SF:MBProgNeg,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2
+SF-Port3000-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueab
+SF:ihf%r(GenericLines,6E,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-L
+SF:ength:\x2042\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20
+SF:Error\nBad\x20request:\x20\[\r\n\r\]")%r(GetRequest,94,"HTTP/1\.1\x2030
+SF:2\x20Found\r\nSet-Cookie:\x20session=;\x20path=/;\x20expires=Thu,\x2001
+SF:-Jan-1970\x2000:00:01\x20GMT;\x20max-age=0;\x20HttpOnly\r\nLocation:\x2
+SF:0/lua/login\.lua\?referer=/\r\n\r\n")%r(NCP,74,"HTTP/1\.1\x20500\x20Ser
+SF:ver\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r\nEr
+SF:ror\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(HTTP
+SF:Options,94,"HTTP/1\.1\x20302\x20Found\r\nSet-Cookie:\x20session=;\x20pa
+SF:th=/;\x20expires=Thu,\x2001-Jan-1970\x2000:00:01\x20GMT;\x20max-age=0;\
+SF:x20HttpOnly\r\nLocation:\x20/lua/login\.lua\?referer=/\r\n\r\n")%r(RTSP
+SF:Request,72,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x204
+SF:6\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nBad\
+SF:x20request:\x20\[OPTIONS\]")%r(RPCCheck,74,"HTTP/1\.1\x20500\x20Server\
+SF:x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r\nError\
+SF:x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(DNSVersi
+SF:onBindReq,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2
 SF:048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nCl
-SF:ient\x20closed\x20connection");
+SF:ient\x20closed\x20connection")%r(DNSStatusRequest,74,"HTTP/1\.1\x20500\
+SF:x20Server\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n
+SF:\r\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%
+SF:r(SSLSessionReq,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Leng
+SF:th:\x2048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Err
+SF:or\nClient\x20closed\x20connection")%r(Kerberos,74,"HTTP/1\.1\x20500\x2
+SF:0Server\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r
+SF:\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(
+SF:SMBProgNeg,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x
+SF:2048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nC
+SF:lient\x20closed\x20connection");
 
-Nmap scan report for 192.168.1.15 (192.168.1.15)
-Host is up (0.0015s latency).
+Nmap scan report for 192.168.1.12 (192.168.1.12)
+Host is up (0.00049s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     (protocol 2.0)
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+3000/tcp open  ppp?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueabih
+SF:f%r(NULL,29,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\+deb8u2\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3000-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueab
+SF:ihf%r(GenericLines,6E,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-L
+SF:ength:\x2042\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20
+SF:Error\nBad\x20request:\x20\[\r\n\r\]")%r(GetRequest,94,"HTTP/1\.1\x2030
+SF:2\x20Found\r\nSet-Cookie:\x20session=;\x20path=/;\x20expires=Thu,\x2001
+SF:-Jan-1970\x2000:00:01\x20GMT;\x20max-age=0;\x20HttpOnly\r\nLocation:\x2
+SF:0/lua/login\.lua\?referer=/\r\n\r\n")%r(NCP,74,"HTTP/1\.1\x20500\x20Ser
+SF:ver\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r\nEr
+SF:ror\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(HTTP
+SF:Options,94,"HTTP/1\.1\x20302\x20Found\r\nSet-Cookie:\x20session=;\x20pa
+SF:th=/;\x20expires=Thu,\x2001-Jan-1970\x2000:00:01\x20GMT;\x20max-age=0;\
+SF:x20HttpOnly\r\nLocation:\x20/lua/login\.lua\?referer=/\r\n\r\n")%r(RTSP
+SF:Request,72,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x204
+SF:6\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nBad\
+SF:x20request:\x20\[OPTIONS\]")%r(RPCCheck,74,"HTTP/1\.1\x20500\x20Server\
+SF:x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r\nError\
+SF:x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(DNSVersi
+SF:onBindReq,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2
+SF:048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nCl
+SF:ient\x20closed\x20connection")%r(DNSStatusRequest,74,"HTTP/1\.1\x20500\
+SF:x20Server\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n
+SF:\r\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%
+SF:r(SSLSessionReq,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Leng
+SF:th:\x2048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Err
+SF:or\nClient\x20closed\x20connection")%r(Kerberos,74,"HTTP/1\.1\x20500\x2
+SF:0Server\x20Error\r\nContent-Length:\x2048\r\nConnection:\x20close\r\n\r
+SF:\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(
+SF:SMBProgNeg,74,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x
+SF:2048\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nC
+SF:lient\x20closed\x20connection");
+
+Nmap scan report for 192.168.1.15
+Host is up (0.012s latency).
 Not shown: 996 filtered ports
-PORT    STATE SERVICE        VERSION
-22/tcp  open  tcpwrapped
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh?
 |_ssh-hostkey: 
 23/tcp  open  telnet?
 80/tcp  open  http?
-|_http-methods: No Allow or Public header in OPTIONS response (status code 200)
-|_http-title: Site doesn't have a title (text/html).
-443/tcp open  ssl/tcpwrapped
-|_http-methods: No Allow or Public header in OPTIONS response (status code 200)
-|_http-title: Site doesn't have a title (text/html).
-| ssl-cert: Subject: commonName=TP-LINK CA/organizationName=TP-LINK Technologies CO., LTD./stateOrProvinceName=Guangdong/countryName=CN
-| Not valid before: 2006-09-18T08:53:05+00:00
-|_Not valid after:  2026-09-13T08:53:05+00:00
-|_ssl-date: 2016-07-09T18:51:56+00:00; +1s from local time.
-| sslv2: 
-|   SSLv2 supported
-|   ciphers: 
-|     SSL2_DES_192_EDE3_CBC_WITH_MD5
-|     SSL2_RC2_CBC_128_CBC_WITH_MD5
-|     SSL2_RC4_128_WITH_MD5
-|     SSL2_DES_64_CBC_WITH_MD5
-|     SSL2_RC2_CBC_128_CBC_WITH_MD5
-|_    SSL2_RC4_128_EXPORT40_WITH_MD5
-2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port23-TCP:V=6.47%I=7%D=7/9%Time=57814745%P=arm-unknown-linux-gnueabihf
-SF:%r(NULL,3C,"\xff\xfc\x01\xff\xfb\x01\xff\xfb\x03\xff\xfd\x18\xff\xfb\x1
-SF:8\xff\xfd\x1f\xff\xfb\x1f\xff\xfb\"\xff\xfb\x05Password\x20required,\x2
-SF:0but\x20none\x20set\r\n")%r(GenericLines,3C,"\xff\xfc\x01\xff\xfb\x01\x
-SF:ff\xfb\x03\xff\xfd\x18\xff\xfb\x18\xff\xfd\x1f\xff\xfb\x1f\xff\xfb\"\xf
-SF:f\xfb\x05Password\x20required,\x20but\x20none\x20set\r\n")%r(GetRequest
-SF:,3C,"\xff\xfc\x01\xff\xfb\x01\xff\xfb\x03\xff\xfd\x18\xff\xfb\x18\xff\x
-SF:fd\x1f\xff\xfb\x1f\xff\xfb\"\xff\xfb\x05Password\x20required,\x20but\x2
-SF:0none\x20set\r\n")%r(HTTPOptions,3C,"\xff\xfc\x01\xff\xfb\x01\xff\xfb\x
-SF:03\xff\xfd\x18\xff\xfb\x18\xff\xfd\x1f\xff\xfb\x1f\xff\xfb\"\xff\xfb\x0
-SF:5Password\x20required,\x20but\x20none\x20set\r\n")%r(RTSPRequest,3C,"\x
-SF:ff\xfc\x01\xff\xfb\x01\xff\xfb\x03\xff\xfd\x18\xff\xfb\x18\xff\xfd\x1f\
-SF:xff\xfb\x1f\xff\xfb\"\xff\xfb\x05Password\x20required,\x20but\x20none\x
-SF:20set\r\n")%r(RPCCheck,3C,"\xff\xfc\x01\xff\xfb\x01\xff\xfb\x03\xff\xfd
-SF:\x18\xff\xfb\x18\xff\xfd\x1f\xff\xfb\x1f\xff\xfb\"\xff\xfb\x05Password\
-SF:x20required,\x20but\x20none\x20set\r\n")%r(DNSVersionBindReq,3C,"\xff\x
-SF:fc\x01\xff\xfb\x01\xff\xfb\x03\xff\xfd\x18\xff\xfb\x18\xff\xfd\x1f\xff\
-SF:xfb\x1f\xff\xfb\"\xff\xfb\x05Password\x20required,\x20but\x20none\x20se
-SF:t\r\n")%r(DNSStatusRequest,3C,"\xff\xfc\x01\xff\xfb\x01\xff\xfb\x03\xff
-SF:\xfd\x18\xff\xfb\x18\xff\xfd\x1f\xff\xfb\x1f\xff\xfb\"\xff\xfb\x05Passw
-SF:ord\x20required,\x20but\x20none\x20set\r\n")%r(Help,3C,"\xff\xfc\x01\xf
-SF:f\xfb\x01\xff\xfb\x03\xff\xfd\x18\xff\xfb\x18\xff\xfd\x1f\xff\xfb\x1f\x
-SF:ff\xfb\"\xff\xfb\x05Password\x20required,\x20but\x20none\x20set\r\n")%r
-SF:(SSLSessionReq,3C,"\xff\xfc\x01\xff\xfb\x01\xff\xfb\x03\xff\xfd\x18\xff
-SF:\xfb\x18\xff\xfd\x1f\xff\xfb\x1f\xff\xfb\"\xff\xfb\x05Password\x20requi
-SF:red,\x20but\x20none\x20set\r\n")%r(Kerberos,3C,"\xff\xfc\x01\xff\xfb\x0
-SF:1\xff\xfb\x03\xff\xfd\x18\xff\xfb\x18\xff\xfd\x1f\xff\xfb\x1f\xff\xfb\"
-SF:\xff\xfb\x05Password\x20required,\x20but\x20none\x20set\r\n")%r(SMBProg
-SF:Neg,3C,"\xff\xfc\x01\xff\xfb\x01\xff\xfb\x03\xff\xfd\x18\xff\xfb\x18\xf
-SF:f\xfd\x1f\xff\xfb\x1f\xff\xfb\"\xff\xfb\x05Password\x20required,\x20but
-SF:\x20none\x20set\r\n");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=6.47%I=7%D=7/9%Time=57814751%P=arm-unknown-linux-gnueabihf
-SF:%r(GetRequest,3813,"HTTP/1\.0\x20200\x20OK\r\nServer:\x20Web\x20Switch\
-SF:r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<script\x2
-SF:0language=JavaScript><!--\nvar\x20g_Lan=1;\nvar\x20logonInfo\x20=\x20ne
-SF:w\x20Array\(\n0,0,0\x20\);\nvar\x20g_year\x20=\x202014;\n--></script>\n
-SF:<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset
-SF:=iso-8859-1\">\n<HTML>\r\n\t<HEAD>\r\n\t\t<meta\x20http-equiv=\"pragma\
-SF:"\x20content=\"no-cache\">\r\n\t\t<meta\x20http-equiv=\"expires\"\x20co
-SF:ntent=\"wed,\x2026\x20Feb\x201997\x2008:21:57\x20GMT\">\r\n\t\t<script\
-SF:x20language=\"javascript\"\x20src=\"\.\./localization/globalString\.js\
-SF:"\x20type=\"text/javascript\"></script>\t\t\r\n\t<SCRIPT\x20language=\"
-SF:javascript\">\r\n\t\t\r\n\t\tif\(window\.parent\x20!=\x20window\)\r\n\t
-SF:\t{\r\n\t\t\twindow\.parent\.location\x20=\x20\"/\";\r\n\t\t}\r\n\t\t\t
-SF:\r\n\t\tvar\x20errType\x20=\x20logonInfo\[0\];\r\n\r\n\t\tfunction\x20g
-SF:oUrl\(url\)\r\n\t\t{\r\n\t\t\twindow\.open\(url,\x20'',\x20''\);\r\n\t\
-SF:t}\r\n\t\t\r\n\t\tfunction\x20resize\(id\)\r\n\t\t{\r\n\t\t\tif\(docume
-SF:nt\.all\)\r\n\t\t\t{\r\n\t\t\t\t\r\n\t\t\t\tvar\x20bgw\x20=\x20document
-SF:\.body\.offsetWidth;\r\n\t\t\t\tvar\x20bgh\x20=\x20document\.body\.offs
-SF:etHeight;\r\n\t\t\t\t\r\n\t\t\t\tdocument\.getEl")%r(HTTPOptions,2FDE,"
-SF:HTTP/1\.0\x20200\x20OK\r\nServer:\x20Web\x20Switch\r\nConnection:\x20cl
-SF:ose\r\nContent-Type:\x20text/html\r\n\r\n<script\x20language=JavaScript
-SF:><!--\nvar\x20g_Lan=1;\nvar\x20logonInfo\x20=\x20new\x20Array\(\n0,0,0\
-SF:x20\);\nvar\x20g_year\x20=\x202014;\n--></script>\n<meta\x20http-equiv=
-SF:\"Content-Type\"\x20content=\"text/html;\x20charset=iso-8859-1\">\n<HTM
-SF:L>\r\n\t<HEAD>\r\n\t\t<meta\x20http-equiv=\"pragma\"\x20content=\"no-ca
-SF:che\">\r\n\t\t<meta\x20http-equiv=\"expires\"\x20content=\"wed,\x2026\x
-SF:20Feb\x201997\x2008:21:57\x20GMT\">\r\n\t\t<script\x20language=\"javasc
-SF:ript\"\x20src=\"\.\./localization/globalString\.js\"\x20type=\"text/jav
-SF:ascript\"></script>\t\t\r\n\t<SCRIPT\x20language=\"javascript\">\r\n\t\
-SF:t\r\n\t\tif\(window\.parent\x20!=\x20window\)\r\n\t\t{\r\n\t\t\twindow\
-SF:.parent\.location\x20=\x20\"/\";\r\n\t\t}\r\n\t\t\t\r\n\t\tvar\x20errTy
-SF:pe\x20=\x20logonInfo\[0\];\r\n\r\n\t\tfunction\x20goUrl\(url\)\r\n\t\t{
-SF:\r\n\t\t\twindow\.open\(url,\x20'',\x20''\);\r\n\t\t}\r\n\t\t\r\n\t\tfu
-SF:nction\x20resize\(id\)\r\n\t\t{\r\n\t\t\tif\(document\.all\)\r\n\t\t\t{
-SF:\r\n\t\t\t\t\r\n\t\t\t\tvar\x20bgw\x20=\x20document\.body\.offsetWidth;
-SF:\r\n\t\t\t\tvar\x20bgh\x20=\x20document\.body\.offsetHeight;\r\n\t\t\t\
-SF:t\r\n\t\t\t\tdocument\.getEl");
+443/tcp open  https?
 
-Nmap scan report for 192.168.1.100
-Host is up (0.00074s latency).
-All 1000 scanned ports on 192.168.1.100 are closed
+Nmap scan report for 192.168.1.135 (192.168.1.135)
+Host is up (0.0027s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.9 (protocol 2.0)
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
 
-Nmap scan report for 192.168.1.132
-Host is up (0.00096s latency).
+Nmap scan report for 192.168.1.136
+Host is up (0.015s latency).
+All 1000 scanned ports on 192.168.1.136 are closed
+
+Nmap scan report for 192.168.1.160
+Host is up (0.0026s latency).
+All 1000 scanned ports on 192.168.1.160 are closed
+
+Nmap scan report for 192.168.1.171 (192.168.1.171)
+Host is up (0.011s latency).
+Not shown: 995 closed ports
+PORT      STATE SERVICE    VERSION
+3689/tcp  open  daap       Apple iTunes DAAP 11.1b37
+5000/tcp  open  rtsp       Apple AirTunes rtspd 200.54 (Apple TV)
+| rtsp-methods: 
+|_  ANNOUNCE, SETUP, RECORD, PAUSE, FLUSH, TEARDOWN, OPTIONS, GET_PARAMETER, SET_PARAMETER, POST, GET
+7000/tcp  open  http       Apple AirPlay httpd
+| http-methods: Potentially risky methods: PUT
+|_See http://nmap.org/nsedoc/scripts/http-methods.html
+|_http-title: Site doesn't have a title.
+7100/tcp  open  http       Apple AirPlay httpd
+|_http-methods: No Allow or Public header in OPTIONS response (status code 400)
+|_http-title: Site doesn't have a title.
+62078/tcp open  tcpwrapped
+Service Info: OSs: OS X, Mac OS X; Device: media device; CPE: cpe:/o:apple:mac_os_x
+
+Nmap scan report for 192.168.1.174
+Host is up (0.0012s latency).
+All 1000 scanned ports on 192.168.1.174 are closed
+
+Nmap scan report for netmon0 (192.168.1.179)
+Host is up (0.00097s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     (protocol 2.0)
@@ -235,86 +222,31 @@ PORT   STATE SERVICE VERSION
 |_http-methods: No Allow or Public header in OPTIONS response (status code 405)
 |_http-title: Welcome to nginx on Debian!
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
-SF-Port22-TCP:V=6.47%I=7%D=7/9%Time=5781474B%P=arm-unknown-linux-gnueabihf
-SF:%r(NULL,22,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\r\n");
+SF-Port22-TCP:V=6.47%I=7%D=7/11%Time=5783B022%P=arm-unknown-linux-gnueabih
+SF:f%r(NULL,22,"SSH-2\.0-OpenSSH_6\.7p1\x20Raspbian-5\r\n");
 
-Nmap scan report for 192.168.1.136
-Host is up (0.019s latency).
-Not shown: 993 closed ports
-PORT      STATE    SERVICE   VERSION
-4125/tcp  filtered rww
-5033/tcp  filtered unknown
-5904/tcp  filtered unknown
-6004/tcp  filtered X11:4
-9110/tcp  filtered unknown
-13722/tcp filtered netbackup
-16016/tcp filtered unknown
+Nmap scan report for 192.168.1.180
+Host is up (0.0032s latency).
+Not shown: 806 closed ports, 193 filtered ports
+PORT      STATE SERVICE    VERSION
+62078/tcp open  tcpwrapped
 
-Nmap scan report for 192.168.1.153
-Host is up (0.0050s latency).
+Nmap scan report for 192.168.1.182 (192.168.1.182)
+Host is up (0.0012s latency).
 Not shown: 998 closed ports
-PORT    STATE SERVICE VERSION
-80/tcp  open  http    Boa httpd
-|_http-methods: No Allow or Public header in OPTIONS response (status code 501)
-| http-title: Range Extender Setup
-|_Requested resource was index.asp
-443/tcp open  https   axhttpd/1.4.9
-|_http-methods: No Allow or Public header in OPTIONS response (status code 200)
-|_http-title: Site doesn't have a title (text/html).
-| ssl-cert: Subject: commonName=127.0.0.1/organizationName=axTLS Project
-| Not valid before: 2010-12-26T22:33:39+00:00
-|_Not valid after:  2024-09-03T21:33:39+00:00
-|_ssl-date: ERROR: Script execution failed (use -d to debug)
-|_sstp-discover: SSTP is supported.
-
-Nmap scan report for 192.168.1.160 (192.168.1.160)
-Host is up (0.0064s latency).
-All 1000 scanned ports on 192.168.1.160 (192.168.1.160) are closed
-
-Nmap scan report for 192.168.1.171
-Host is up (0.0069s latency).
-Not shown: 972 closed ports
-PORT      STATE    SERVICE           VERSION
-89/tcp    filtered su-mit-tg
-106/tcp   filtered pop3pw
-119/tcp   filtered nntp
-254/tcp   filtered unknown
-625/tcp   filtered apple-xsrvr-admin
-843/tcp   filtered unknown
-880/tcp   filtered unknown
-1042/tcp  filtered afrog
-1123/tcp  filtered murray
-1594/tcp  filtered sixtrak
-1688/tcp  filtered nsjtp-data
-2381/tcp  filtered compaq-https
-2525/tcp  filtered ms-v-worlds
-2800/tcp  filtered acc-raid
-2811/tcp  filtered gsiftp
-3689/tcp  open     daap              Apple iTunes DAAP 11.1b37
-5000/tcp  open     rtsp              Apple AirTunes rtspd 200.54 (Apple TV)
-| rtsp-methods: 
-|_  ANNOUNCE, SETUP, RECORD, PAUSE, FLUSH, TEARDOWN, OPTIONS, GET_PARAMETER, SET_PARAMETER, POST, GET
-5357/tcp  filtered wsdapi
-7000/tcp  open     http              Apple AirPlay httpd
+PORT     STATE SERVICE VERSION
+631/tcp  open  ipp     CUPS 1.5
 | http-methods: Potentially risky methods: PUT
 |_See http://nmap.org/nsedoc/scripts/http-methods.html
-|_http-title: Site doesn't have a title.
-7100/tcp  open     http              Apple AirPlay httpd
-|_http-methods: No Allow or Public header in OPTIONS response (status code 400)
-|_http-title: Site doesn't have a title.
-7937/tcp  filtered nsrexecd
-8254/tcp  filtered unknown
-9091/tcp  filtered xmltec-xmlmail
-17988/tcp filtered unknown
-19315/tcp filtered keyshadow
-50006/tcp filtered unknown
-50636/tcp filtered unknown
-62078/tcp open     tcpwrapped
-Service Info: OSs: OS X, Mac OS X; Device: media device; CPE: cpe:/o:apple:mac_os_x
+|_http-title: Web Interface is Disabled - CUPS v1.5.4
+1947/tcp open  http    Aladdin HASP license manager 17.00
+|_http-methods: No Allow or Public header in OPTIONS response (status code 501)
+|_http-title: 403 Forbidden
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
-Nmap scan report for 192.168.1.173 (192.168.1.173)
-Host is up (0.0081s latency).
-All 1000 scanned ports on 192.168.1.173 (192.168.1.173) are closed
+Nmap scan report for 192.168.1.183
+Host is up (0.0075s latency).
+All 1000 scanned ports on 192.168.1.183 are closed
 
 Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
-Nmap done: 256 IP addresses (14 hosts up) scanned in 223.10 seconds
+Nmap done: 256 IP addresses (17 hosts up) scanned in 400.77 seconds
