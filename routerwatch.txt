@@ -1,0 +1,56 @@
+Tue Jul 26 18:37:35 EDT 2016
+PING 192.168.1.1 (192.168.1.1) 56(84) bytes of data.
+[1469572655.037640] 64 bytes from 192.168.1.1: icmp_seq=1 ttl=64 time=0.430 ms
+[1469572655.037750] 64 bytes from 192.168.1.1: icmp_seq=1 ttl=64 time=0.432 ms (DUP!)
+[1469572656.037778] 64 bytes from 192.168.1.1: icmp_seq=2 ttl=64 time=1.58 ms
+[1469572656.037921] 64 bytes from 192.168.1.1: icmp_seq=2 ttl=64 time=1.59 ms (DUP!)
+[1469572657.038420] 64 bytes from 192.168.1.1: icmp_seq=3 ttl=64 time=0.342 ms
+[1469572657.038551] 64 bytes from 192.168.1.1: icmp_seq=3 ttl=64 time=0.344 ms (DUP!)
+[1469572658.037406] 64 bytes from 192.168.1.1: icmp_seq=4 ttl=64 time=0.332 ms
+[1469572658.037528] 64 bytes from 192.168.1.1: icmp_seq=4 ttl=64 time=0.334 ms (DUP!)
+[1469572659.036429] 64 bytes from 192.168.1.1: icmp_seq=5 ttl=64 time=0.351 ms
+[1469572659.036553] 64 bytes from 192.168.1.1: icmp_seq=5 ttl=64 time=0.353 ms (DUP!)
+[1469572660.035434] 64 bytes from 192.168.1.1: icmp_seq=6 ttl=64 time=0.354 ms
+[1469572660.035555] 64 bytes from 192.168.1.1: icmp_seq=6 ttl=64 time=0.356 ms (DUP!)
+
+--- 192.168.1.1 ping statistics ---
+6 packets transmitted, 6 received, +6 duplicates, 0% packet loss, time 4997ms
+rtt min/avg/max/mdev = 0.332/0.567/1.590/0.458 ms
+PING 10.0.1.1 (10.0.1.1) 56(84) bytes of data.
+[1469572660.042958] 64 bytes from 10.0.1.1: icmp_seq=1 ttl=63 time=0.873 ms
+[1469572660.043080] 64 bytes from 10.0.1.1: icmp_seq=1 ttl=63 time=0.875 ms (DUP!)
+[1469572661.043894] 64 bytes from 10.0.1.1: icmp_seq=2 ttl=63 time=0.675 ms
+[1469572661.044005] 64 bytes from 10.0.1.1: icmp_seq=2 ttl=63 time=0.677 ms (DUP!)
+[1469572662.042895] 64 bytes from 10.0.1.1: icmp_seq=3 ttl=63 time=0.665 ms
+[1469572662.043024] 64 bytes from 10.0.1.1: icmp_seq=3 ttl=63 time=0.667 ms (DUP!)
+[1469572663.041860] 64 bytes from 10.0.1.1: icmp_seq=4 ttl=63 time=0.626 ms
+[1469572663.041978] 64 bytes from 10.0.1.1: icmp_seq=4 ttl=63 time=0.628 ms (DUP!)
+[1469572664.040891] 64 bytes from 10.0.1.1: icmp_seq=5 ttl=63 time=0.657 ms
+[1469572664.041013] 64 bytes from 10.0.1.1: icmp_seq=5 ttl=63 time=0.659 ms (DUP!)
+[1469572665.039863] 64 bytes from 10.0.1.1: icmp_seq=6 ttl=63 time=0.622 ms
+[1469572665.039983] 64 bytes from 10.0.1.1: icmp_seq=6 ttl=63 time=0.624 ms (DUP!)
+
+--- 10.0.1.1 ping statistics ---
+6 packets transmitted, 6 received, +6 duplicates, 0% packet loss, time 4997ms
+rtt min/avg/max/mdev = 0.622/0.687/0.875/0.088 ms
+PING 10.0.1.100 (10.0.1.100) 56(84) bytes of data.
+[1469572665.047542] 64 bytes from 10.0.1.100: icmp_seq=1 ttl=64 time=0.403 ms
+[1469572665.047648] 64 bytes from 10.0.1.100: icmp_seq=1 ttl=64 time=0.405 ms (DUP!)
+[1469572666.046427] 64 bytes from 10.0.1.100: icmp_seq=2 ttl=64 time=0.324 ms
+[1469572666.046539] 64 bytes from 10.0.1.100: icmp_seq=2 ttl=64 time=0.326 ms (DUP!)
+[1469572667.045507] 64 bytes from 10.0.1.100: icmp_seq=3 ttl=64 time=0.383 ms
+[1469572667.045645] 64 bytes from 10.0.1.100: icmp_seq=3 ttl=64 time=0.385 ms (DUP!)
+[1469572668.045286] 64 bytes from 10.0.1.100: icmp_seq=4 ttl=64 time=0.321 ms
+[1469572668.045410] 64 bytes from 10.0.1.100: icmp_seq=4 ttl=64 time=0.323 ms (DUP!)
+[1469572669.045310] 64 bytes from 10.0.1.100: icmp_seq=5 ttl=64 time=0.349 ms
+[1469572669.045431] 64 bytes from 10.0.1.100: icmp_seq=5 ttl=64 time=0.351 ms (DUP!)
+[1469572670.045295] 64 bytes from 10.0.1.100: icmp_seq=6 ttl=64 time=0.345 ms
+[1469572670.045415] 64 bytes from 10.0.1.100: icmp_seq=6 ttl=64 time=0.347 ms (DUP!)
+
+--- 10.0.1.100 ping statistics ---
+6 packets transmitted, 6 received, +6 duplicates, 0% packet loss, time 4997ms
+rtt min/avg/max/mdev = 0.321/0.355/0.405/0.031 ms
+<span id="cpu_temp">CPU 79.1 &#176;C / WL0 50.90 &#176;C / WL1 54.50 &#176;C</span>&nbsp;
+
++++
+
